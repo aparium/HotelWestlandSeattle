@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/css/hotelwestland.b7bf23c80.min.css"
+    rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    WebFont.load({ google: { families: ["Inter:700", "Inter:regular"] } });
+  </script>
+  <script src="https://use.typekit.net/xxp0ava.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try { Typekit.load(); } catch (e) { }
+  </script>
+  <link
+    href="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f2f0d6178d982188ae8c66_Frame%20427322970.png"
+    rel="shortcut icon" type="image/x-icon" />
+  <link href="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f2f0f0150d4e1e34e5fc82_FAVICON.png"
+    rel="apple-touch-icon" />
+</head>
+
+<body class="body">
+  <div class="page-wrapper">
+    <main class="main-wrapper">
+      <section class="footer_section">
+        <div class="div-block-10">
+          <div class="div-block-11">
+            <img
+              src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f1ee099a1f3d0ca90191f2_building_drawing.svg"
+              loading="lazy" alt="drawing of building" />
+            <address>
+              <div class="address">100 s. King Street<br />Seattle, wa</div>
+            </address>
+          </div>
+          <div class="div-block-12">
+            <a href="https://urban-villages.com/" target="_blank" class="w-inline-block">
+              <img
+                src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f1ee52dc4f6392d3c1c509_urban_villages.png"
+                loading="lazy" alt="urban villages logo" class="image" />
+            </a>
+            <a href="https://www.aparium.com/" target="_blank" class="w-inline-block">
+              <img
+                src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f43f97510ab801cf4f75a2_aparium.png"
+                loading="lazy" alt="" class="image-2" />
+            </a>
+          </div>
+        </div>
+        <div class="div-block-15">
+          <ul role="list" class="list">
+            <li class="list-item"><a data-w-id="00a36fca-0d8c-ddf6-ad32-4672b4ac91e3" href="/terms-of-use"
+                class="footer_link">Terms &amp; Conditions</a></li>
+            <li class="list-item"><a href="/privacy-policy" class="footer_link">Privacy Policy</a></li>
+            <li class="list-item"><a href="/cookies" class="footer_link">Cookie Statement</a></li>
+          </ul>
+          <div class="footer_link">2024 © Copyright Aparium Hotel Group</div>
+        </div>
+      </section>
+      <script type="text/javascript">
+        function setCookie(cookiename, cookievalue, cookieexpirydays) { var d = new Date(); d.setTime(d.getTime() + (cookieexpirydays * 24 * 60 * 60 * 1000)); var expires = "expires=" + d.toUTCString(); document.cookie = cookiename + "=" + cookievalue + ";" + expires + ";path=/"; } function getCookie(cookiename) { var name = cookiename + "="; var cookiearray = document.cookie.split(';'); for (var i = 0; i < cookiearray.length; i++) { var cookie = cookiearray[i]; while (cookie.charAt(0) == ' ') { cookie = cookie.substring(1); } if (cookie.indexOf(name) == 0) { return cookie.substring(name.length, c.length); } } return ""; }
+
+        function setPrivacyPolicyConsentCookie() { var cookiename = 'PrivacyPolicy.17399.Consent'; var cookievalue = ''; var expirydays = 30; var privacypolicyvalue = getCookie(cookiename); if (privacypolicyvalue == null || privacypolicyvalue == "") setCookie(cookiename, cookievalue, 30); else { if (privacypolicyvalue != cookievalue) setCookie(cookiename, cookievalue, 30); } $("#MyFooter_dvPrivacyPolicy").addClass('hide') $("#MyFooter_dvPrivacyManage").removeClass('hide'); }
+
+        function setMyCookie(action) { var functional; var analytics; var advertising; if (action == "choice") { functionalDiv = document.querySelector('#cbFunctional'); functional = functionalDiv.getAttribute('aria-checked'); analyticsDiv = document.querySelector('#cbAnalytics'); analytics = analyticsDiv.getAttribute('aria-checked'); advertisingDiv = document.querySelector('#cbAdvertising'); advertising = advertisingDiv.getAttribute('aria-checked'); } else if (action == "all") { functional = true; analytics = true; advertising = true; } else if (action == "deny") { functional = false; analytics = false; advertising = false; } $.ajax({ type: 'POST', url: 'xml/setcookie.aspx?setcookies=&hotelid=' + WsVars.HotelID + '&fn=' + functional + '&an=' + analytics + '&ad=' + advertising, dataType: 'json', cache: false, success: function (d) { $("#MyFooter_dvSetPrivacyPolicy").addClass('hide'); $("#MyFooter_dvPrivacyManage").removeClass('hide'); WSCCONSENT.Init(); window.location.reload(); }, error: function () { alert("error"); } }); }
+
+        function showCookieSetting() { var cookiename = 'PrivacyPolicy.17399.Consent'; var privacypolicyvalue = WSCCONSENT.GetUserConsentFromCookie(cookiename); if (privacypolicyvalue !== null) { $("#cbNecessary").attr('aria-checked', true); if (privacypolicyvalue.Functional === true) $("#cbFunctional").attr('aria-checked', true); else $("#cbFunctional").attr('aria-checked', false); if (privacypolicyvalue.Analytics === true) $("#cbAnalytics").attr('aria-checked', true); else $("#cbAnalytics").attr('aria-checked', false); if (privacypolicyvalue.Advertising === true) $("#cbAdvertising").attr('aria-checked', true); else $("#cbAdvertising").attr('aria-checked', false); $("#MyFooter_dvPrivacyManage").addClass('hide'); $("#MyFooter_dvPrivacyPolicy").addClass('hide'); $("#MyFooter_dvSetPrivacyPolicy").removeClass('hide'); $('.ws-privacy-policy-inner-show-hide').removeClass('ws-open'); $('.ws-privacy-policy-inner-right .ws-privacy-policy-inner-prefs-text').addClass('hide'); } else { $("#MyFooter_dvPrivacyManage").addClass('hide'); $("#MyFooter_dvPrivacyPolicy").addClass('hide'); $("#MyFooter_dvSetPrivacyPolicy").removeClass('hide'); $('.ws-privacy-policy-inner-show-hide').removeClass('ws-open'); $('.ws-privacy-policy-inner-right .ws-privacy-policy-inner-prefs-text').addClass('hide'); } }
+
+        function divHide() { $("#dvCookieDetails").addClass('hide'); } $('body').on('click', '#MyFooter_btnConfirmMyChoices', function (e) { setMyCookie('choice'); e.preventDefault(); }); $('body').on('click', '#MyFooter_btnAcceptAll , #MyFooter_btnCookiePolicyAcceptAll', function (e) { setMyCookie('all'); e.preventDefault(); }); $('body').on('click', '#MyFooter_btnDenyAll', function (e) { setMyCookie('deny'); e.preventDefault(); }); $('body').on('click', '#MyFooter_btnCookiePolicy', function (e) { showCookieSetting(); e.preventDefault(); }); $('body').on('click', '#MyFooter_btnPrivacyManage', function (e) { showCookieSetting(); e.preventDefault(); }); $('body').on('click', '.toggle-switch button.switch', function (e) { $(this).attr('aria-checked', ($(this).attr('aria-checked') == "false" ? true : false)); e.preventDefault(); }); $('body').on('click', '.ws-privacy-policy-inner-show-hide', function (e) { $(this).parent().parent().find('.ws-privacy-policy-inner-right .ws-privacy-policy-inner-prefs-text').toggleClass('hide'); $(this).toggleClass('ws-open'); if ($(this).hasClass('ws-open')) { $(this).text(WsMulti.LessInfoBlock); } else { $(this).text(WsMulti.MoreInfoBlock); } e.preventDefault(); });
+
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function () { let isScrolled = false; function handleScroll() { const scrollY = $(window).scrollTop(); isScrolled = scrollY > 0; $('body').toggleClass('scrolled', isScrolled); } $(window).scroll(handleScroll); handleScroll(); $('head').append('<link rel="shortcut icon" href="https://cdn.shrglobal.com/IBE/CrsMedia/P17399/fav-01.svg"/>'); $('#trg').click(function () { $('#ws-utility').toggleClass('open'); $('#headerwrapper').toggleClass('opened'); $('#ws-main').toggleClass('opened'); $(this).toggleClass('to-close'); }); $('#trg-navigation').click(function () { $('#site-navigation').toggleClass('opened'); $(this).toggleClass('closed'); }); });
+      </script>
+
+    </main>
+  </div>
+</body>
+</html>
