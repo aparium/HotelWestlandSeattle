@@ -1,6 +1,11 @@
+/*
+|    AHG |   LINK THE STYLE SHEET
 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/SEAWES.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/SEAWES_custom.css">
+
+*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 
 :root {
   --background-color--background-primary: var(--base-color-neutral--black);
@@ -38,20 +43,45 @@
   --base-color-system--focus-state: #2d62ff;
   --link-color--link-secondary: var(--base-color-neutral--black);
   --link-color--link-alternate: var(--base-color-neutral--white);
-}
 
-
-body {
-  margin: 0
+  --color-brand-1: var(--pine);
+  --color-brand-2: var(--brick);
+  --color-brand-2-opacity: rgba(61, 72, 54, 0.85);
+  --color-brand-3: var(--cast-iron);
+  --color-brand-4: var(--sandstone);
+  --color-brand-5: #00a878;
+  --color-brand-6: #513b56;
+  --color-brand-7: #a63a50;
+  --primary: var(--pine);
+  --secondary: var(--brick);
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --font-family-1: "Inter", sans-serif;
+  --font-family-2: "prestige-elite-std";
+  --font-size-lg: 36px;
+  --font-size-md: 30px;
+  --font-size-md-24: 24px;
+  --font-size-md-20: 20px;
+  --font-size-body: 18px;
+  --letter-spacing-lg: 1.5px;
+  --border-radius-0: 0;
+  --border-radius-1: 0px;
+  --box-shadow-main: 4px 10px 21px -10px var(--color-brand-3);
+  --box-shadow-bkg: 1px 1px 25px -15px var(--color-brand-3);
+  --box-shadow-header: 4px 10px 21px -21px var(--color-black);
+  --border-default: 1px solid var(--color-brand-3);
+  --border-white: 2px solid var(--color-white);
+  --border-transparent: 1px solid transparent;
+  --border-brand-1: 2px solid var(--color-brand-1);
+  --border-brand-2: 2px solid var(--color-brand-2);
+  --transition-default: all 0.5s ease;
+  /*    --bkg-graphic: url(https://uat.windsurfercrs.com/CrsMedia/P13870/bkg.png);*/
 }
 body {
-  color: #333;
-  background-color: #fff;
-  min-height: 100%;
-  margin: 0;
-  font-family: Arial,sans-serif;
-  font-size: 14px;
-  line-height: 20px
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 body {
   color: #000;
@@ -59,140 +89,117 @@ body {
   font-size: 1rem;
   line-height: 1.5
 }
-
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  margin: 0
 }
 
+
+.body {
+  background-color: var(--background-color--background-primary);
+}
+
+
 .address {
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
-  text-decoration: none !Important;
+  text-decoration: none !important;
   text-transform: uppercase;
 }
 
-.body {
-  background-color: #d0cdbf
-}
-
-.nav_fixed {
-  z-index: 9;
-  position: sticky;
-  inset: 0% 0% auto
-}
-.nav_component {
-  background-color: var(--cast-iron);
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  position: static;
-  inset: 0% 0% auto
-}
-.nav_container {
-  color: #000;
-  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex
-}
-
-.div-block-10 {
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 4rem;
-  display: flex
-}
-.div-block-11 {
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  display: flex
-}
-.div-block-12 {
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
-  justify-content: flex-start;
-  align-items: center;
-  display: flex
-}
-.div-block-13 {
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  display: flex
-}
-.div-block-15 {
-  justify-content: space-between;
-  display: flex
-}
-
-
-.image {
-  max-width: 222px
-}
-.image-2 {
-  max-width: 150px
-}
-
-.hero_view {
-  background-image: url(https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f1a4908e12cfbde26ffeab_hotel_westland.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  display: flex
-}
-.logo_container {
-  grid-column-gap: 3.5rem;
-  grid-row-gap: 3.5rem;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: center;
-  display: flex
-}
 .coming_soon {
   background-color: var(--pine);
   color: var(--sandstone);
   text-align: center;
   text-transform: uppercase;
   padding: 1rem;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.125rem
+  line-height: 1.125rem;
 }
 
-.footer_section {
-  padding: 4.375rem 5rem 4.0625rem;
+.div-block-10 {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+  display: flex;
+}
+.div-block-11 {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  display: flex;
+}
+.div-block-12 {
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+.div-block-13 {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  display: flex;
+}
+.div-block-15 {
+  justify-content: space-between;
+  display: flex;
+}
+
+.footerwrapper {
+  width: 100% !important;
 }
 
 .footer_link {
   color: var(--cast-iron);
-  font-family: prestige-elite-std,sans-serif;
-  font-size: .75rem;
-  line-height: .75rem;
-  text-decoration: none
-}
-.footer_link:hover {
-  text-decoration: underline
+  font-family: prestige-elite-std, sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  text-decoration: none;
 }
 
+.footer_link:hover {
+  text-decoration: underline;
+}
+
+.image-logo {
+  max-height: 150px; /* Constrain the image height */
+}
+
+.image {
+  max-width: 222px;
+}
+
+.image-2 {
+  max-width: 150px;
+}
+
+.logo_container {
+  grid-column-gap: 3.5rem;
+  grid-row-gap: 3.5rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.link-block {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  color: var(--sandstone);
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  opacity: 1 !important;
+}
+.link-block:hover {
+  text-decoration: underline;
+  opacity: 1 !important;
+}
 .list {
   align-items: center;
   display: flex;
@@ -205,71 +212,112 @@ body {
 }
 
 .list-item {
-  line-height: .75rem
+  line-height: 0.75rem;
+}
+
+.main-wrapper {
+  background-color: var(--brick);
+}
+
+.nav_fixed {
+  z-index: 9;
+  position: sticky;
+  inset: 0% 0% auto;
+  background-color: var(--background-color--background-primary);
+}
+
+.nav_component {
+  background-color: var(--cast-iron);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  position: static;
+  inset: 0% 0% auto;
+}
+.nav_container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
 }
 
 .padding-global {
   width: 100%;
   padding-left: 2.5rem;
-  padding-right: 2.5rem
+  padding-right: 2.5rem;
 }
 
 .page-wrapper {
-  background-color: var(--brick)
+  background-color: var(--brick);
 }
 
 .section_hero {
   color: #fff;
-  background-color: #000;
+  background-color: var(--brick);
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100svh;
-  display: flex;
-  position: relative
-}
-.section_hero.padding-global {
-  background-color: #0000;
-  padding: 5rem
+  padding: 5rem;
+  position: relative;
 }
 
 .text-block {
-  letter-spacing: -.0788rem;
-  font-family: prestige-elite-std,sans-serif;
-  font-size: 1.125rem
+  letter-spacing: -0.0788rem;
+  font-family: prestige-elite-std, sans-serif;
+  font-size: 1.125rem;
+  text-decoration: none !;
 }
+
 .text-block-2 {
   color: var(--sandstone);
-  letter-spacing: -.0788rem;
-  font-family: prestige-elite-std,sans-serif;
+  letter-spacing: -0.0788rem;
+  font-family: prestige-elite-std, sans-serif;
   font-size: 1.3rem;
-  font-weight: 700
+  font-weight: 700;
+  text-decoration: none !important;
 }
 .text-block-3 {
   color: var(--brick);
-  letter-spacing: -.0788rem;
-  font-family: prestige-elite-std,sans-serif;
-  font-size: 1.3rem
+  letter-spacing: -0.0788rem;
+  font-family: prestige-elite-std, sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none !important;
 }
 
 .w-inline-block {
   max-width: 100%;
-  display: inline-block
-}
-.w-nav {
-  z-index: 1000;
-  background: #ddd;
-  position: relative
-}
-.w-nav:after,
-.w-nav:before {
-  content: " ";
-  grid-area: 1/1/2/2;
-  display: table
-}
-.w-nav:after {
-  clear: both
+  display: inline-block;
 }
 
+#header,
+#content,
+#footer {
+  max-width: unset !important;
+  width: unset !important;
+}
+
+
+
+.footerwrapper {
+  padding: 2rem 5rem !important;
+  background-color: var(--brick) !important;
+
+} 
+#footercontent {
+  border-top: unset;
+  padding-top: unset;
+  font-size: unset;
+  color: unset;
+}
 
 @media screen and (max-width: 479px) {
   .div-block-12 {
@@ -277,32 +325,28 @@ body {
     grid-row-gap: 1rem;
     flex-flow: row;
     justify-content: space-between;
-    align-items: flex-start
+    align-items: flex-start;
   }
   .div-block-15 {
-    text-align: center
+    text-align: center;
   }
-  .footer_section,
+  .footerwrapper,
   .links_section,
   .newsletter_section {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
   .image {
-    max-width: 150px
+    max-width: 150px;
   }
   .image-2 {
-    max-width: 100px
+    max-width: 100px;
   }
   .address {
     font-size: 1.3rem;
-    line-height: 1.3rem
+    line-height: 1.3rem;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 767px) {
   h1 {
@@ -334,59 +378,54 @@ body {
     grid-row-gap: 2rem;
     flex-flow: column;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
   }
   .address {
     font-size: 1.5rem;
-    line-height: 1.5rem
+    line-height: 1.5rem;
   }
   .list {
     justify-content: flex-start;
-    align-items: center
+    align-items: center;
   }
 }
-
-
 
 @media screen and (max-width: 991px) {
   .div-block-10 {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
-    flex-flow: column
+    flex-flow: column;
   }
   .div-block-11 {
-    width: 100%
+    width: 100%;
   }
   .div-block-12 {
     align-items: center;
-    width: 100%
+    width: 100%;
   }
   .list {
     flex-flow: wrap;
     justify-content: flex-end;
-    align-items: center
+    align-items: center;
   }
 }
-
-
-
-
 
 @media screen and (min-width: 1440px) {
   .page-wrapper {
     justify-content: center;
     align-items: flex-start;
-    display: block
+    display: block;
   }
   .main-wrapper {
     background-color: #d0cdbf;
-    display: block
+    display: block;
   }
-  .footer_section {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .footerwrapper {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
+
 
 
 
@@ -518,3 +557,214 @@ ul {
 }
 
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: prestige-elite-std;
+  /* font-weight:400;*/
+  src: url(https://cdn.shrglobal.com/IBE/CrsMedia/P17399/PrestigeEliteStd-Bd.woff) format("woff");
+}
+.ws-skiptocontent {
+  display: none;
+}
+
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+  font-size: unset;
+  min-height:unset;
+}
+
+html {
+  font-size: unset;
+  min-height:unset;
+}
+@media screen and (max-width: 991px) {
+  :root {
+    --font-size-lg: 30px;
+    --font-size-md: 24px;
+    --font-size-md-24: 20px;
+    --font-size-md-20: 18px;
+    --font-size-body: 16px;
+    --letter-spacing-lg: 0.51px;
+  }
+}
+
+/*------------------- Core elements ----------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  /*    border-radius: var(--border-radius-1);*/
+}
+
+a {
+  color: var(--color-brand-2);
+  text-decoration: none;
+}
+
+a {
+  color: var(--color-brand-2);
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  position: relative;
+  font-weight: 400;
+  transition: var(--transition-default);
+}
+  /*   
+a:hover,
+a:active {
+  color: var(--color-brand-3);
+  transition: color 0.8s ease;
+}
+  */
+
+
+
+#ws-main {
+  padding: 0 10px 1px;
+  padding-top: 20px !important;
+  margin-bottom: 20px;
+  background-color: var(--color-brand-1);
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-main);
+}
+
+
+
+/*------------------------------------------------*/
+
+#headerwrapper {
+  height: 100px;
+  order: 1;
+}
+
+#header {
+  height: 100%;
+}
+
+#ws-main section.ws-filter-sort-items .ws-inner {
+  padding: 20px;
+}
+
+#dvCallSave .ws-inner,
+#ws-main section.ws-component .ws-inner {
+  background-color: var(--color-brand-4) !important;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-header);
+  text-align: center;
+}
+
+.ws-call-save .ws-item {
+  width: 100%;
+}
+
+/*-------------------------------------------------*/
