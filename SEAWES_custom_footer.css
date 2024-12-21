@@ -201,18 +201,45 @@
   font-style: normal;
 }
 
-/* apercu-pro-bold */
+
+/* Prestige */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Prestige";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.ttf") format("truetype");
+}
+
+/* Prestige Bold */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Prestige";
   font-style: normal;
   font-stretch: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot");
-  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.ttf") format("truetype");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.ttf") format("truetype");
+}
+
+.prestige-regular {
+  font-family: "prestige", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prestige-bold {
+  font-family: "prestige-bold", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -253,7 +280,6 @@
   --base-color-system--focus-state: #2d62ff;
   --link-color--link-secondary: var(--base-color-neutral--black);
   --link-color--link-alternate: var(--base-color-neutral--white);
-
   --color-brand-1: var(--pine);
   --color-brand-2: var(--brick);
   --color-brand-2-opacity: rgba(61, 72, 54, 0.85);
@@ -286,6 +312,26 @@
   --border-brand-2: 2px solid var(--color-brand-2);
   --transition-default: all 0.5s ease;
   /*    --bkg-graphic: url(https://uat.windsurfercrs.com/CrsMedia/P13870/bkg.png);*/
+
+  --base-color-neutral--black: #000;
+--base-color-neutral--white: #fff;
+--base-color-neutral--neutral-lightest: #eee;
+--base-color-neutral--neutral-lighter: #ccc;
+--base-color-neutral--neutral-light: #aaa;
+--base-color-neutral--neutral: #666;
+--base-color-neutral--neutral-dark: #444;
+--base-color-neutral--neutral-darker: #222;
+--base-color-neutral--neutral-darkest: #111;
+--base-color-system--success-green: #cef5ca;
+--base-color-system--success-green-dark: #114e0b;
+--base-color-system--warning-yellow: #fcf8d8;
+--base-color-system--warning-yellow-dark: #5e5515;
+--base-color-system--error-red: #f8e4e4;
+--base-color-system--error-red-dark: #3b0b0b;
+--base-color-system--focus-state: #2d62ff;
+--link-color--link-secondary: var(--base-color-neutral--black);
+--link-color--link-alternate: var(--base-color-neutral--white);
+
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -385,6 +431,10 @@ body {
 
 .image-2 {
   max-width: 150px;
+}
+
+a:focus {
+  outline: 0;
 }
 
 .logo_container {
@@ -836,15 +886,14 @@ a#buWsCartCont:hover {
   padding: 15px;
   border-radius: var(--border-radius-1);
 }
+
 #buWsCartCart,
-.ws-menu-bar li.activeli a,
 #buIndex,
 .ws-secondary,
 a.ws-secondary,
 span.ws-secondary,
 .ws-buttons .ws-button,
 .ws-buttons .ws-button-small,
-.ws-menu-bar li a,
 .ws-button-small,
 .ws-button-small.ws-tag,
 .ws-filter-sort-items a.ws-button-small.ws-active,
@@ -884,13 +933,50 @@ span.ws-secondary,
   display: none !important; /* Hide the Google Map container */
 }
 
-
+.ws-menu-bar li {
+  background-color: var(--sandstone);
+}
 
 .ws-property-item .ws-menu-bar li a {
-  padding: .75em 1em 0em 1em;
+  padding: .6em 1.5em .6em 1.5em;
   line-height: 1;
   text-transform: uppercase;
   font-family: Apercu, sans-serif;
   color: #3d4836;
+  min-width: 100px;
+}
+
+.ws-property-item .ws-menu-bar li.activeli a {
+  padding: .75em 1em 0em 1em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: Apercu, sans-serif;
+  font-weight: 700;
+  color: #3d4836;
   line-height: 1.5;
 }
+
+li#liMap,
+li#liGallery,
+li#liAmenities,
+li#liAbout {
+  border-radius: 0 !important;
+}
+
+li#liMap:hover,
+li#liGallery:hover,
+li#liAmenities:hover,
+li#liAbout:hover {
+  font-weight: 700;
+}
+
+a#tbGallery:active {
+  color: red !important;
+}
+
+.ws-menu-bar li.activeli a,
+.ws-menu-bar li a,
+
+
+
+
