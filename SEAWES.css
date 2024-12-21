@@ -58,10 +58,10 @@
   --color-brand-5:#cef5ca;
   --color-brand-6: #114e0b;
   --color-brand-7: #5e5515;
-  --primary: #3d4836;
+  --primary:  #3d4836;
   --secondary: #d0cdbf;
   --color-black: #000000;
-  --color-white: #ffffff;
+  --color-white: #d0cdbf;
   --font-family-1: "Inter", sans-serif;
   --font-family-2: "prestige-elite-std";
   --font-size-lg: 36px;
@@ -75,8 +75,8 @@
   --box-shadow-main: none;
   --box-shadow-bkg: none;
   --box-shadow-header: none;
-  --border-default: 1px solid var(--color-brand-4);
-  --border-white: 1px solid var(--color-brand-4);
+  --border-default: 1px solid var(--color-brand-2);
+  --border-white: 1px solid var(--color-brand-2);
   --border-transparent: 1px solid transparent;
   --border-brand-1: 1px solid var(--color-brand-1);
   --border-brand-2: 1px solid var(--color-brand-2);
@@ -156,6 +156,7 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-family-1)!important;}
 h1{font-size:var(--font-size-lg)!important;}
 h2{font-size:var(--font-size-md)!important;line-height:1;margin-bottom:10px;}
 
+#WsBgModal,
 #ws-main {
   padding: 0 10px 1px;
   padding-top: 20px !important;
@@ -164,6 +165,20 @@ h2{font-size:var(--font-size-md)!important;line-height:1;margin-bottom:10px;}
   background-color: var(--color-brand-1);
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow-main);
+}
+
+#WsBgModal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  overflow: hidden;
+  position: fixed;
+  background: var(--color-brand-1) !important;
+  opacity: 0;
+  filter: alpha(opacity=80);
+  max-height: 0;
+  height: 100%;
 }
 
 /* ----------- Containers ------------- */
@@ -326,7 +341,7 @@ h2{font-size:var(--font-size-md)!important;line-height:1;margin-bottom:10px;}
 }
 
 #ws-utility a:hover {
-  color: var(--color-brand-3);
+  color: var(--color-brand-1);
 }
 
 #ws-utility .ws-choose li a:hover,
@@ -359,7 +374,7 @@ h2{font-size:var(--font-size-md)!important;line-height:1;margin-bottom:10px;}
 
 #dvCallSave .ws-inner,
 #ws-main section.ws-component .ws-inner {
-  background-color: var(--color-brand-4) !important;
+  background-color: var(--color-brand-1) !important;
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow-header);
   text-align: center;
@@ -383,7 +398,7 @@ h2{font-size:var(--font-size-md)!important;line-height:1;margin-bottom:10px;}
 .ws-element {
   outline: none;
   background-color: transparent;
-  border: var(--border-brand-1);
+  border: var(--border-brand-2);
   border-radius: var(--border-radius-0);
 }
 
@@ -393,7 +408,7 @@ h2{font-size:var(--font-size-md)!important;line-height:1;margin-bottom:10px;}
   border-radius: var(--border-radius-0);
   outline: none;
   background-color: transparent;
-  border-bottom: var(--border-brand-1);
+  border-bottom: var(--border-brand-2);
 }
 
 .ws-interact .ws-form-item .ws-element:focus,
@@ -479,13 +494,13 @@ a.ws-element {
   border: none;
   background-color: transparent;
   outline: none;
-  color: var(--color-brand-1);
+  color: var(--color-brand-2);
   border-radius: var(--border-radius-0);
   border-bottom: var(--border-default);
 }
 
 .ws-results span.customSelect {
-  color: var(--color-brand-1);
+  color: var(--color-brand-2);
   font-weight: 400;
   border-radius: var(--border-radius-0);
   border-bottom: var(--border-brand-1);
@@ -529,7 +544,7 @@ a.ws-element {
 #MyFooter_dvPrivacyPolicy > div.dvAccept .ws-button.ws-primary:hover,
 #MyFooter_dvSetPrivacyPolicy .ws-privacy-policy-inner .ws-form-item .ws-privacy-policy-inner-select div .ws-button:hover {
   color: var(--color-brand-1) !important;
-  background-color: var(--color-white) !important;
+  background-color: var(--color-brand-2) !important;
   border: var(--border-radius-1) !important;
   transition: var(--transition-default);
 }
@@ -592,8 +607,8 @@ span.ws-primary,
 .ws-button.ws-primary,
 .ws-button-small.ws-primary,
 .ws-component .ws-inner .ws-primary {
-  color: var(--color-white);
-  border: var(--border-brand-1);
+  color: var(--color-brand-1);
+  border: var(--color-brand-1);
   border-radius: var(--border-radius-1);
   font-size: var(--font-size-body);
   font-family: var(--font-family-2);
@@ -602,7 +617,7 @@ span.ws-primary,
   font-weight: 400;
   text-transform: capitalize;
   cursor: pointer !important;
-  background-color: var(--color-brand-1);
+  background-color: var(--color-brand-2);
   transition: var(--transition-default);
   text-decoration: none;
   text-align: center;
@@ -613,8 +628,8 @@ span.ws-primary,
 
 body:not(.ws-logged-in) .ws-button-small.ws-loyalty-public.ws-shouldlogin {
   background-color: transparent !important;
-  color: var(--color-brand-1) !important;
-  border: var(--border-brand-1) !important;
+  color: var(--color-brand-2) !important;
+  border: var(--border-brand-2) !important;
 }
 
 .ws-menu-bar li a .active,
@@ -625,7 +640,7 @@ body:not(.ws-logged-in) .ws-button-small.ws-loyalty-public.ws-shouldlogin {
 .ws-grid-list .ws-button-small.ws-active,
 .ws-attribute .ws-button-small.ws-active {
   color: var(--color-brand-3);
-  border: var(--border-brand-2);
+  border: var(--color-brand-3);
   border-radius: var(--border-radius-1);
   font-size: var(--font-size-body);
   font-family: var(--font-family-2);
@@ -635,7 +650,7 @@ body:not(.ws-logged-in) .ws-button-small.ws-loyalty-public.ws-shouldlogin {
   font-weight: 400;
   text-transform: capitalize;
   cursor: pointer !important;
-  background-color: var(--color-brand-3);
+  background-color: var(--color-brand-2);
   transition: var(--transition-default);
   text-decoration: none;
   text-align: center;
@@ -649,8 +664,8 @@ body:not(.ws-logged-in) .ws-button-small.ws-loyalty-public.ws-shouldlogin {
 .ws-filter-sort-items button.ws-tag,
 .ws-related-data .ws-secondary,
 .ws-component .ws-inner .ws-secondary {
-  color: var(--color-white);
-  border: var(--border-brand-1);
+  color: var(--color-brand-2-opacity);
+  border: var(--color-brand-1);
   border-radius: var(--border-radius-1);
   font-size: var(--font-size-body);
   font-family: var(--font-family-2);
@@ -659,7 +674,7 @@ body:not(.ws-logged-in) .ws-button-small.ws-loyalty-public.ws-shouldlogin {
   font-weight: 400;
   text-transform: capitalize;
   cursor: pointer !important;
-  background-color: var(--color-brand-1);
+  background-color: var(--color-brand-2);
   transition: var(--transition-default);
   text-decoration: none;
   text-align: center;
@@ -674,9 +689,9 @@ body:not(.ws-logged-in) .ws-button-small.ws-loyalty-public.ws-shouldlogin {
 .ws-filter-sort-items button.ws-tag:hover,
 .ws-related-data .ws-secondary:hover,
 .ws-component .ws-inner .ws-secondary:hover {
-  color: var(--color-brand-3) !important;
+  color: var(--color-brand-1) !important;
   background-color: var(--color-brand-2) !important;
-  border: var(--border-brand-2) !important;
+  border:  var(--color-brand-1) !important;
 }
 
 body:not(.ws-logged-in) .ws-button-small.ws-loyalty-public.ws-shouldlogin:hover,
@@ -698,15 +713,15 @@ span.ws-primary:hover,
 .ws-button-small.ws-primary:hover,
 .ws-component .ws-inner .ws-primary:hover {
   background-color: var(--color-brand-2) !important;
-  border: var(--border-brand-2) !important;
+  border: var(--color-brand-2) !important;
   color: var(--color-brand-3) !important;
 }
 
 .ws-menu-bar li a:hover .active,
 #MyHeading_buSignIn:hover {
-  background-color: var(--color-brand-1);
-  border: 1px solid var(--color-brand-1);
-  color: var(--color-white);
+  background-color: var(--color-brand-2);
+  border: 1px solid var(--color-brand-2);
+  color: var var(--color-brand-1);
 }
 
 /*------------- Modal Login panel --------------*/
@@ -1665,7 +1680,7 @@ div.dtCheckout span,
 #ws-options-select > .ws-inner,
 #ws-occupancy-select > .ws-inner,
 #ws-calendar > .ws-inner {
-  background-color: var(--color-brand-1);
+  background-color: var(--color-brand-2);
   border-radius: var(--border-radius-0);
   box-shadow: var(--box-shadow-main);
 }

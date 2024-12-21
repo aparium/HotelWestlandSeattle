@@ -1812,7 +1812,6 @@ textarea.w-select {
   left: 0
 }
 :root {
-  --link-color--link-primary: var(--base-color-brand--blue\<deleted\|variable-de000a4d-0fee-1f9e-af85-624658122d10\>);
   --background-color--background-primary: var(--base-color-neutral--black);
   --text-color--text-alternate: var(--base-color-neutral--white);
   --text-color--text-primary: var(--base-color-neutral--black);
@@ -1821,9 +1820,7 @@ textarea.w-select {
   --text-color--text-success: var(--base-color-system--success-green-dark);
   --border-color--border-primary: var(--base-color-neutral--neutral-lightest);
   --background-color--background-alternate: var(--base-color-neutral--white);
-  --background-color--background-secondary: var(--base-color-brand--blue\<deleted\|variable-de000a4d-0fee-1f9e-af85-624658122d10\>);
   --brick: #d0cdbf;
-  --background-color--background-tertiary: var(--base-color-brand--pink\<deleted\|variable-c4661572-8a15-7367-e98c-cc1a0987f6d1\>);
   --background-color--background-error: var(--base-color-system--error-red);
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --cast-iron: #212120;
@@ -1848,11 +1845,8 @@ textarea.w-select {
   --base-color-system--error-red: #f8e4e4;
   --base-color-system--error-red-dark: #3b0b0b;
   --base-color-system--focus-state: #2d62ff;
-  --border-color--border-secondary: var(--base-color-brand--blue\<deleted\|variable-de000a4d-0fee-1f9e-af85-624658122d10\>);
   --link-color--link-secondary: var(--base-color-neutral--black);
   --link-color--link-alternate: var(--base-color-neutral--white);
-  --base-color-brand--blue\<deleted\|variable-de000a4d-0fee-1f9e-af85-624658122d10\>: #2d62ff;
-  --base-color-brand--pink\<deleted\|variable-c4661572-8a15-7367-e98c-cc1a0987f6d1\>: #dd23bb
 }
 .w-checkbox {
   margin-bottom: 5px;
