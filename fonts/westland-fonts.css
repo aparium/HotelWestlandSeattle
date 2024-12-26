@@ -1,28 +1,24 @@
-
 /*
 <!-- 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aparium/fonts/ahg-fonts.css">
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/aparium/fonts/main/ahg-fonts.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/seawes_custom.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/main/westland-fonts.css">
 
 -->
 */
 
 
 /**  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-|    AHG |   APARIUM
+|    AHG |   HOTEL WESTLAND BY APARIUM
 |    mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 */
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-/* APH |  APARIUM OFFICIAL BRAND FREIGHT FONTS                                                                      */
+/* APH |   HOTEL WESTLAND OFFICIAL BRAND FREIGHT FONTS                                                                      */
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 /*  Apercu   */
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-
-
 
 /* apercu-light */
 @font-face {
@@ -52,7 +48,6 @@
     url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.ttf') format('truetype'),
 }
  
-
  /* apercu-medium */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -81,9 +76,7 @@
     url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.ttf') format('truetype'),
 }
 
-
 /* apercu */
-
 
 .apercu-light {
   font-family: "apercu", sans-serif;
@@ -108,12 +101,10 @@
   font-weight: 700;
   font-style: normal;
 }
-
  
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 /*  Apercu Pro    */
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-
 
 /* apercu-pro-light */
 @font-face {
@@ -142,7 +133,6 @@
     url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.woff') format('woff'),
     url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.ttf') format('truetype'),
 }
- 
 
  /* apercu-pro-medium */
 @font-face {
@@ -157,7 +147,6 @@
     url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.woff') format('woff'),
     url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.ttf') format('truetype'),
 }
-
  
  /* apercu-pro-bold */
  @font-face {
@@ -173,9 +162,7 @@
     url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.ttf') format('truetype'),
 }
 
- 
  /* apercu-pro */
-
 
 .apercu-pro-light {
   font-family: "apercu-pro", sans-serif;
@@ -207,16 +194,42 @@
   font-style: normal;
 }
  
- /* apercu-pro-bold */
- @font-face {
+/* Prestige */
+@font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Prestige';
+  font-family: "Prestige";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.ttf") format("truetype");
+}
+
+/* Prestige Bold */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Prestige";
   font-style: normal;
   font-stretch: normal;
   font-weight: 700;
-  src: url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot');
-  src: url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.ttf') format('truetype'),
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.ttf") format("truetype");
+}
+
+.prestige-regular {
+  font-family: "prestige", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prestige-bold {
+  font-family: "prestige-bold", serif;
+  font-weight: 700;
+  font-style: normal;
 }
