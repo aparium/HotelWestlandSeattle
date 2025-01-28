@@ -1,13 +1,16 @@
+from bs4 import BeautifulSoup
+
+# Sample HTML content (replace this with the content of pricegrid.html)
+html_content = """
+
 <html>
 
 <head>
   <link rel="stylesheet" href="pricegrid.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/westland-fonts.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/westland-fonts.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&amp;display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
 </head>&lt;
 
 <body>
@@ -21,7 +24,7 @@
       prism-select-input__trigger
       prism-select-input__trigger--size-default
       prism-select-input__trigger--is-default
-    "tabindex="0" aria-controls="ember-basic-dropdown-content-ember5974" aria-haspopup="listbox"
+    " tabindex="0" aria-controls="ember-basic-dropdown-content-ember5974" aria-haspopup="listbox"
               aria-owns="ember-basic-dropdown-content-ember5974" role="button" data-ebd-id="ember5974-trigger"
               aria-expanded="false" aria-disabled="false">
               <div class="prism-icon-brand">
@@ -37,12 +40,19 @@
                     d="M16.8934 9.03041L12 6.25122L7.10657 9.03041C6.75377 9.23078 6.30264 9.11187 6.09895 8.76482C5.89526 8.41776 6.01614 7.97398 6.36894 7.77361L11.2624 4.99442C11.7188 4.73518 12.2812 4.73518 12.7376 4.99442L17.6311 7.77361C17.9839 7.97398 18.1047 8.41776 17.9011 8.76482C17.6974 9.11187 17.2462 9.23078 16.8934 9.03041Z"
                     fill="#1F3D57"></path>
                 </svg>
-              </div>              <!---->
+              </div>
+              <!---->
               <p class="trigger__label text-300--medium truncate">
                 Brand.com
               </p>
               <!---->
-              
+              <span class="prism-icon prism-icon--small prism-icon--default">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" alt="Icon for chevron-down">
+                  <path
+                    d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                  </path>
+                </svg>
+              </span>
             </div>
             <div id="ember-basic-dropdown-content-ember5974" class="ember-basic-dropdown-content-placeholder"
               style="display: none;"></div>
@@ -3945,7 +3955,7 @@
                       </td>
                       <!---->
                     </tr>
-
+     
                     </tr>
                     <tr>
                       <td class="hotelid fixed-roomtype-mapping-cell" style="left: 0px;">
@@ -6946,12 +6956,7 @@
                               <div draggable="true" id="ember6670"
                                 class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
                                 <div class="prism-select-input">
-                                  <div
-                                    class="ember-view ember-basic-dropdown-trigger ember-power-select-trigger prism-select-input__trigger prism-select-input__trigger--size-default prism-select-input__trigger--is-default"
-                                    tabindex="0" aria-controls="ember-basic-dropdown-content-ember6671"
-                                    aria-haspopup="listbox" aria-owns="ember-basic-dropdown-content-ember6671"
-                                    role="button" data-ebd-id="ember6671-trigger" aria-expanded="false"
-                                    aria-disabled="false">
+                                  <div class="ember-view ember-basic-dropdown-trigger ember-power-select-trigger prism-select-input__trigger prism-select-input__trigger--size-default prism-select-input__trigger--is-default" tabindex="0" aria-controls="ember-basic-dropdown-content-ember6671" aria-haspopup="listbox" aria-owns="ember-basic-dropdown-content-ember6671" role="button" data-ebd-id="ember6671-trigger" aria-expanded="false" aria-disabled="false">
                                     <!---->
                                     <!---->
                                     <p class="trigger__label text-300--medium ">
@@ -7332,580 +7337,580 @@
                           </div>
                         </div>
                       </td>
-                    <tr>
-                      <td class="hotelid fixed-roomtype-mapping-cell" style="left: 0px;">
-                        <div class="roomtype-competitor-name">
-                          <p class="heading-2">Four Seasons Hotel Seattle</p>
-                        </div>
-                        <div class="roomtype-competitor-compset-tag-container">
-                          <div>
-                            <span class="roomtype-competitor-compset-tag text-200--regular">
-                              Primary compset
-                            </span>
+                      <tr>
+                        <td class="hotelid fixed-roomtype-mapping-cell" style="left: 0px;">
+                          <div class="roomtype-competitor-name">
+                            <p class="heading-2">Four Seasons Hotel Seattle</p>
                           </div>
-                          <div>
-                            <span class="roomtype-competitor-compset-tag text-200--regular">
-                              Secondary compset
-                            </span>
+                          <div class="roomtype-competitor-compset-tag-container">
+                            <div>
+                              <span class="roomtype-competitor-compset-tag text-200--regular">
+                                Primary compset
+                              </span>
+                            </div>
+                            <div>
+                              <span class="roomtype-competitor-compset-tag text-200--regular">
+                                Secondary compset
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_0" data-hotel="239890">
-                        <div id="ember6356" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6357"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_0" data-hotel="239890">
+                          <div id="ember6356" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6357"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6358" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6358" role="button"
-                                    data-ebd-id="ember6358-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Deluxe bay-view accessible room
-                                    </p>
-                                    <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div id="ember-basic-dropdown-content-ember6358"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6360" class="ember-tooltip-base ember-view">
-                                  <div>
+                                      aria-owns="ember-basic-dropdown-content-ember6358" role="button"
+                                      data-ebd-id="ember6358-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Deluxe bay-view accessible room
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6358"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
                                   </div>
+                                  <div id="ember6360" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div draggable="true" id="ember6361"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                                <div draggable="true" id="ember6361"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6362" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6362" role="button"
-                                    data-ebd-id="ember6362-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Seattle-view room
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6362" role="button"
+                                      data-ebd-id="ember6362-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Seattle-view room
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6362"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6362"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6364" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6364" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  830
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                830
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_4" data-hotel="239890">
-                        <div id="ember6365" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6366"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_4" data-hotel="239890">
+                          <div id="ember6365" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6366"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6367" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6367" role="button"
-                                    data-ebd-id="ember6367-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Seattle-view hearing-deluxe accessible room
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6367" role="button"
+                                      data-ebd-id="ember6367-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Seattle-view hearing-deluxe accessible room
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6367"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6367"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6369" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6369" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  870
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                870
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_8" data-hotel="239890">
-                        <div id="ember6370" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6371"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_8" data-hotel="239890">
+                          <div id="ember6370" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6371"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6372" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6372" role="button"
-                                    data-ebd-id="ember6372-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Partial bay-view room
-                                    </p>
-                                    <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div id="ember-basic-dropdown-content-ember6372"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6374" class="ember-tooltip-base ember-view">
-                                  <div>
+                                      aria-owns="ember-basic-dropdown-content-ember6372" role="button"
+                                      data-ebd-id="ember6372-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Partial bay-view room
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6372"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
                                   </div>
+                                  <div id="ember6374" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div draggable="true" id="ember6375"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                                <div draggable="true" id="ember6375"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6376" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6376" role="button"
-                                    data-ebd-id="ember6376-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Seattle-view accessible room
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6376" role="button"
+                                      data-ebd-id="ember6376-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Seattle-view accessible room
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6376"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6376"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6378" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6378" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  858
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                858
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_9" data-hotel="239890">
-                        <div id="ember6379" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6380"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_9" data-hotel="239890">
+                          <div id="ember6379" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6380"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6381" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6381" role="button"
-                                    data-ebd-id="ember6381-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Deluxe bay-view room
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6381" role="button"
+                                      data-ebd-id="ember6381-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Deluxe bay-view room
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6381"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6381"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6383" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6383" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  990
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                990
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_12" data-hotel="239890">
-                        <div id="ember6384" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6385"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_12" data-hotel="239890">
+                          <div id="ember6384" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6385"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6386" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6386" role="button"
-                                    data-ebd-id="ember6386-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Corner deluxe bay-view room
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6386" role="button"
+                                      data-ebd-id="ember6386-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Corner deluxe bay-view room
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6386"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6386"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6388" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6388" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  1,200
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                1,200
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_13" data-hotel="239890">
-                        <div id="ember6389" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6390"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_13" data-hotel="239890">
+                          <div id="ember6389" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6390"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6391" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6391" role="button"
-                                    data-ebd-id="ember6391-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Corner elliott bay suite
-                                    </p>
-                                    <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div id="ember-basic-dropdown-content-ember6391"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6393" class="ember-tooltip-base ember-view">
-                                  <div>
+                                      aria-owns="ember-basic-dropdown-content-ember6391" role="button"
+                                      data-ebd-id="ember6391-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Corner elliott bay suite
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6391"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
                                   </div>
+                                  <div id="ember6393" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div draggable="true" id="ember6394"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                                <div draggable="true" id="ember6394"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6395" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6395" role="button"
-                                    data-ebd-id="ember6395-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Deluxe elliott bay suite
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6395" role="button"
+                                      data-ebd-id="ember6395-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Deluxe elliott bay suite
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6395"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6395"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6397" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6397" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  2,665
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                2,665
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_15" data-hotel="239890">
-                        <div id="ember6398" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6399"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_15" data-hotel="239890">
+                          <div id="ember6398" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6399"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6400" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6400" role="button"
-                                    data-ebd-id="ember6400-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Governor's suite
-                                    </p>
-                                    <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
-                                  </div>
-                                  <div id="ember-basic-dropdown-content-ember6400"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6402" class="ember-tooltip-base ember-view">
-                                  <div>
+                                      aria-owns="ember-basic-dropdown-content-ember6400" role="button"
+                                      data-ebd-id="ember6400-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Governor's suite
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6400"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
                                   </div>
+                                  <div id="ember6402" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div draggable="true" id="ember6403"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                                <div draggable="true" id="ember6403"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6404" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6404" role="button"
-                                    data-ebd-id="ember6404-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Two-bedroom deluxe elliott bay suite
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6404" role="button"
+                                      data-ebd-id="ember6404-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Two-bedroom deluxe elliott bay suite
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6404"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6404"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6406" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6406" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  5,078
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                5,078
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="drop-target-div" data-roomtype="c_16" data-hotel="239890">
-                        <div id="ember6407" class="draggable-object-target ember-view">
-                          <div class="droppabletd  ">
-                            <div class="draggabul ">
-                              <div draggable="true" id="ember6408"
-                                class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
-                                <div class="prism-select-input">
-                                  <div class="ember-view ember-basic-dropdown-trigger
+                        </td>
+                        <td class="drop-target-div" data-roomtype="c_16" data-hotel="239890">
+                          <div id="ember6407" class="draggable-object-target ember-view">
+                            <div class="droppabletd  ">
+                              <div class="draggabul ">
+                                <div draggable="true" id="ember6408"
+                                  class="js-draggableObject draggable-object ember-view flex flex-col ember-tooltip-target">
+                                  <div class="prism-select-input">
+                                    <div class="ember-view ember-basic-dropdown-trigger
          ember-power-select-trigger 
         prism-select-input__trigger
         prism-select-input__trigger--size-default
         prism-select-input__trigger--is-default
       " tabindex="0" aria-controls="ember-basic-dropdown-content-ember6409" aria-haspopup="listbox"
-                                    aria-owns="ember-basic-dropdown-content-ember6409" role="button"
-                                    data-ebd-id="ember6409-trigger" aria-expanded="false" aria-disabled="false">
-                                    <!----><!---->
-                                    <p class="trigger__label text-300--medium ">
-                                      Presidential suite
-                                    </p>
+                                      aria-owns="ember-basic-dropdown-content-ember6409" role="button"
+                                      data-ebd-id="ember6409-trigger" aria-expanded="false" aria-disabled="false">
+                                      <!----><!---->
+                                      <p class="trigger__label text-300--medium ">
+                                        Presidential suite
+                                      </p>
+                                      <!---->
+                                      <span class="prism-icon prism-icon--small prism-icon--default">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                          alt="Icon for chevron-down">
+                                          <path
+                                            d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div id="ember-basic-dropdown-content-ember6409"
+                                      class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
                                     <!---->
-                                    <span class="prism-icon prism-icon--small prism-icon--default">
-                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        alt="Icon for chevron-down">
-                                        <path
-                                          d="M6.6967 8.9948C6.30618 9.38532 6.30618 10.0185 6.6967 10.409L11.2929 15.0052C11.6834 15.3957 12.3166 15.3957 12.7071 15.0052L17.3033 10.409C17.6938 10.0185 17.6938 9.38532 17.3033 8.9948C16.9128 8.60427 16.2796 8.60427 15.8891 8.9948L12 12.8839L8.11092 8.9948C7.72039 8.60427 7.08723 8.60427 6.6967 8.9948Z">
-                                        </path>
-                                      </svg>
-                                    </span>
                                   </div>
-                                  <div id="ember-basic-dropdown-content-ember6409"
-                                    class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
-                                  <!---->
-                                </div>
-                                <div id="ember6411" class="ember-tooltip-base ember-view">
-                                  <div>
-                                    <!---->
+                                  <div id="ember6411" class="ember-tooltip-base ember-view">
+                                    <div>
+                                      <!---->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="roomtype-container-avg-price-block">
+                              <p class="text-300--regular">Avg. price</p>
+                              <p class="text-300--regular">
+                                <span class="emphasis emphasis--primary">
+                                  $
+                                  10,860
+                                </span>
+                              </p>
+                            </div>
                           </div>
-                          <div class="roomtype-container-avg-price-block">
-                            <p class="text-300--regular">Avg. price</p>
-                            <p class="text-300--regular">
-                              <span class="emphasis emphasis--primary">
-                                $
-                                10,860
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </td>
+                        </td>
                       <!---->
                     </tr>
                   </tbody>
@@ -7924,72 +7929,70 @@
     </div>
   </div>
   <script src="script.js">// Fetch data from the JSON file
-    document.addEventListener("DOMContentLoaded", () => {
-      // Tooltip container
-      const tooltip = document.createElement("div");
-      tooltip.id = "tooltip";
-      tooltip.style.position = "absolute";
-      tooltip.style.display = "none";
-      tooltip.style.background = "#333";
-      tooltip.style.color = "#fff";
-      tooltip.style.padding = "10px";
-      tooltip.style.borderRadius = "5px";
-      tooltip.style.zIndex = "1000";
-      document.body.appendChild(tooltip);
-
-      // Load JSON data
-      let roomData = {};
-      fetch("room_data.json")
-        .then((response) => response.json())
-        .then((data) => {
-          roomData = data;
-
-          // Add hover listeners to elements with room IDs
-          const roomElements = document.querySelectorAll("[id$='-trigger']"); // Match elements ending with '-trigger'
-          roomElements.forEach((element) => {
-            element.addEventListener("mouseover", (event) => {
-              const roomId = element.id; // Get the ID (e.g., ember6034-trigger)
-              const roomInfo = roomData[roomId]; // Find the room data
-
-              if (roomInfo) {
-                // Populate tooltip content
-                tooltip.innerHTML = `
-              <strong>Rates for ${roomId}:</strong><br>
-              May: ${roomInfo.May}<br>
-              June: ${roomInfo.June}<br>
-              July: ${roomInfo.July}<br>
-              August: ${roomInfo.August}<br>
-              September: ${roomInfo.September}<br>
-              October: ${roomInfo.October}<br>
-              November: ${roomInfo.November}
-            `;
-              } else {
-                tooltip.textContent = "No data available for this room.";
-              }
-
-              // Display tooltip
-              tooltip.style.display = "block";
-              tooltip.style.left = `${event.pageX + 10}px`;
-              tooltip.style.top = `${event.pageY + 10}px`;
-            });
-
-            element.addEventListener("mousemove", (event) => {
-              // Update tooltip position
-              tooltip.style.left = `${event.pageX + 10}px`;
-              tooltip.style.top = `${event.pageY + 10}px`;
-            });
-
-            element.addEventListener("mouseout", () => {
-              // Hide tooltip
-              tooltip.style.display = "none";
-            });
-          });
-        })
-        .catch((error) => {
-          console.error("Error loading JSON data:", error);
-        });
+    let lookupData = {};
+    
+    fetch('data.json') // Adjust path if the JSON file is in a subfolder
+      .then(response => response.json())
+      .then(data => {
+        lookupData = data; // Store data for lookup
+      })
+      .catch(error => console.error('Error fetching data:', error));
+    
+    // Select all elements with relevant IDs
+    const elementsWithIds = document.querySelectorAll('.ember-tooltip-base');
+    const tooltip = document.getElementById('tooltip');
+    
+    elementsWithIds.forEach(element => {
+      element.addEventListener('mouseover', (event) => {
+        const elementId = element.id; // Get the element's ID (e.g., ember5992)
+        const roomInfo = lookupData[elementId]; // Lookup data based on the ID
+    
+        if (roomInfo) {
+          // Set tooltip content
+          tooltip.innerHTML = `
+            <strong>${roomInfo.roomType}</strong><br>
+            Avg. Price for this room: <strong>${roomInfo.avgPrice}</strong>
+          `;
+        } else {
+          tooltip.textContent = 'Room data not available';
+        }
+    
+        // Show tooltip and position it near the cursor
+        tooltip.style.display = 'block';
+        tooltip.style.left = `${event.pageX + 10}px`;
+        tooltip.style.top = `${event.pageY + 10}px`;
+      });
+    
+      element.addEventListener('mousemove', (event) => {
+        // Update tooltip position as the mouse moves
+        tooltip.style.left = `${event.pageX + 10}px`;
+        tooltip.style.top = `${event.pageY + 10}px`;
+      });
+    
+      element.addEventListener('mouseout', () => {
+        // Hide tooltip on mouse out
+        tooltip.style.display = 'none';
+      });
     });
-  </script> <!-- Include the script at the end -->
+    </script> <!-- Include the script at the end -->
 </body>
 
 </html>
+
+"""
+
+# Parse the HTML content
+soup = BeautifulSoup(html_content, 'html.parser')
+
+# Find all relevant divs
+results = []
+for div in soup.find_all('div', attrs={'data-ebd-id': True}):
+    # Extract the ID
+    id_value = div['data-ebd-id']
+    # Extract the text from the <p> tag
+    text_value = div.find('p').get_text(strip=True)
+    results.append((id_value, text_value))
+
+# Print the results
+for id_value, text_value in results:
+    print(f"{id_value}, {text_value}")

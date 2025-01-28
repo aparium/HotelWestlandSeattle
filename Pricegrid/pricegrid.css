@@ -830,10 +830,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-body {
-  position: relative;
-  line-height: 1.2;
-}
+
 
 ol, ul {
   list-style: none;
@@ -860,10 +857,7 @@ a {
 img {
   max-width: 100%;
 }
-
-/* Defaults that came from ember-paper */
 body, html {
-  position: relative;
   height: 100%;
   min-height: 100%;
   -webkit-text-size-adjust: 100%;
@@ -873,6 +867,19 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  position: relative;
+  overflow: auto; /* or overflow-y: auto; */
+  line-height: 1.2;
+  color: var(--color-text-default);
+  background-color: var(--color-background-main-content);
+}
+
+html {
+  overflow: auto; /* or overflow-y: auto; */
+}
+
 
 @supports not (font-variation-settings: normal) {
 
@@ -1053,8 +1060,9 @@ html {
 
 h1, .heading-1 {
   line-height: var(--prism-typography-heading-2-line-height);
+  color: #3d4836;
   font-family: 'ApercuPro', sans-serif;
-  font-size: var(--prism-typography-heading-2-font-size);
+  font-size: 1.15rem;
   font-weight: var(--prism-typography-heading-1-font-weight);
 }
 
@@ -1062,7 +1070,7 @@ h2, .heading-2 {
   line-height: var(--prism-typography-heading-2-line-height);
   text-transform: uppercase;
   font-family: 'Apercu', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -1676,8 +1684,8 @@ h4, .heading-4 {
 
 /* Generic modal styles that can be used across repositories */
 .modal {
-  --modal-max-width: 100vw;
-  --modal-max-height: 100vh;
+  --modal-max-width: 90vw;
+  --modal-max-height: 80vh;
   --modal-min-width: 600px;
 }
 
@@ -21026,11 +21034,7 @@ html {
   background-color: var(--color-background-level-1);
 }
 
-body {
-  overflow-y: hidden;
-  color: var(--color-text-default);
-  background-color: var(--color-background-main-content);
-}
+
 
 a {
   color: inherit;
