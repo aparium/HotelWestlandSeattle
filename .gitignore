@@ -1,8 +1,28 @@
+# Logs
+logs
+*.log
+npm-debug.log*
 
-fonts/.DS_Store
+# Dependency directories
+node_modules
+
+# Build generated files
+dist
+lib
+solution
+temp
+*.sppkg
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# OSX
 .DS_Store
-.DS_Store
-fonts/.DS_Store
-.DS_Store
-.DS_Store
-.DS_Store
+
+
+# Visual Studio files
+.ntvs_analysis.dat
+.vs
+.vscode
+bin
+obj
