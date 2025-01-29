@@ -1,0 +1,14 @@
+{
+  "ember5992": {
+    "roomType": "City Side",
+    "avgPrice": "$462"
+  },
+  "ember5993": {
+    "roomType": "Two Beds",
+    "avgPrice": "$512"
+  },
+  "ember5994": {
+    "roomType": "King Suite",
+    "avgPrice": "$620"
+  }
+}
