@@ -1079,7 +1079,7 @@ h4 {
 }
 .text-300--medium {
   line-height: var(--prism-typography-text-300-medium-line-height);
-  padding: 1.25rem .5rem .5rem .5rem;
+  padding: .5rem .5rem .5rem .5rem;
   color: #3d4836;
   text-transform: uppercase;
   font-family: ApercuPro,sans-serif;
