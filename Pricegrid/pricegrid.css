@@ -986,12 +986,7 @@ html {
     src: url(https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap) format('woff2');
   }
 }
-#ancestor-element-id {
-  overflow: auto;
-}
-td.hotelid.fixed-roomtype-mapping-cell div:nth-child(6) {
-  overflow: auto;
-}
+
 html {
   font-family: ApercuPro,sans-serif;
 }
@@ -8179,11 +8174,17 @@ nav.tabs ol li.tab a.active {
   padding-bottom: 1px;
   vertical-align: top;
 }
+
+
+
 .roomtype-mapping #roomtype-mapping-fixed-header {
   position: relative;
-  z-index: 100;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  text-align: left!important;
+  background-color:#eeebe3 ;
+  text-align: left !important;
 }
 .roomtype-mapping #roomtype-mapping-fixed-header tr {
   height: 60px;
@@ -8246,7 +8247,7 @@ nav.tabs ol li.tab a.active {
 .roomtype-mapping table .first-letter-uppercase::first-letter {
   text-transform: uppercase;
 }
-.roomtype-mapping table .empty,
+
 .roomtype-mapping table .hotelid {
   width: 250px;
   min-width: 250px;
@@ -8336,6 +8337,21 @@ nav.tabs ol li.tab a.active {
 .roomtype-mapping .roomtype-mapping-table-container {
   overflow: hidden;
 }
+
+.selections.selections--ota-row.selections--left-align {
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+  background-color: #3d4836;
+}
+
+.roomtype-mapping-table-container {
+  position: sticky;
+  z-index: 10;
+  top: 64.1875px;
+}
+
+
 .roomtype-mapping .selections {
   border-bottom: 1px solid var(--color-border-default);
 }
@@ -10864,6 +10880,7 @@ nav.tabs ol li.tab a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10px 0 10px;
   text-align: center;
 }
 .ota-selections-container.ranking-navbar,
