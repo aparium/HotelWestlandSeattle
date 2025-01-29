@@ -8358,7 +8358,7 @@ nav.tabs ol li.tab a.active {
 .roomtype-mapping .draggable-object-target,
 .roomtype-mapping td {
   height: 100%;
-  padding-top: 11px;
+  padding-top: 25px;
   padding-bottom: 1px;
   vertical-align: top;
 }
