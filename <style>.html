@@ -1,0 +1,461 @@
+<style>
+  .nav_fixed {
+    position: sticky;
+    z-index: 9;
+    background-color: var(--background-color--background-primary);
+    inset: 0% 0% auto;
+  }
+
+  .nav_component {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100;
+    height: 3;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--background-color--background-primary);
+
+  }
+
+  .nav-text-block {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'apercu-pro', sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    text-decoration: none !important;
+    letter-spacing: .0015rem;
+    color: #eae8dd;
+  }
+
+  .nav_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 930px;
+  }
+
+  .social-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: .5rem;
+    grid-row-gap: 1rem;
+  }
+
+
+  .custom-header-wrapper {
+    display: flex;
+  }
+
+
+  .custom-header-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5rem 0rem 5rem;
+    background-color: var(--brick);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+
+  .coming-soon-logo-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding-top: clamp(10px, 1vh, 40px);
+    padding-bottom: clamp(10px, 1vh, 50px);
+    background-color: var(--pine) !important;
+  }
+
+  .responsive-hotel-logo {
+    max-height: 225px;
+    width: auto;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .coming-soon-logo-container {
+      padding-top: clamp(10px, 3vh, 80px);
+      padding-bottom: clamp(10px, 3vh, 80px);
+    }
+
+  }
+
+  @media (min-width: 1024px) {
+    .coming-soon-logo-container {
+      padding-top: clamp(10px, 5vh, 120px);
+      padding-bottom: clamp(10px, 5vh, 120px);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .responsive-hotel-logo {
+      max-height: 150px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .responsive-hotel-logo {
+      max-height: 100px;
+      width: auto;
+      height: auto;
+    }
+  }
+</style>
+
+
+
+<div class="nav_fixed">
+  <div class="nav_component">
+    <div class="nav_container">
+      <div>
+        <a href="https://www.hotelwestlandseattle.com" class="link-block">
+          <div class="nav-text-block">
+            Back to Home
+          </div>
+        </a>
+      </div>
+      <div class="social-icons-wrapper">
+        <a href="https://www.instagram.com/hotelwestlandseattle/" target="_blank" class="w-inline-block">
+          <img
+            src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f19e38a51d9d019b257b54_InstagramLogo.svg"
+            alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/aparium-hotel-group/" class="w-inline-block">
+          <img
+            src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f19e385210d7b111194f05_LinkedinLogo.svg"
+            alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header id="header">
+  <main class="custom-header-wrapper">
+    <section class="custom-header-section">
+      <div class="coming-soon-logo-container ">
+        <img class="responsive-hotel-logo"
+          src="https://res.cloudinary.com/drdgkdg7m/image/upload/v1738855279/SEAWES_Hotel_Westland_Wordmark_Stacked_Brick_kq95wf.png"
+          alt="hotel westland logo">
+        <h1 class="coming_soon" style="
+        background-color: #000000; 
+        text-align: center; 
+        text-transform: uppercase; 
+        color: #eeebe3; 
+        font-family: 'apercu-pro', sans-serif; 
+        font-size: 1rem; 
+        padding: 6px 8px 4px 8px;
+        ">
+          Coming Spring 2025
+        </h1>
+      </div>
+    </section>
+  </main>
+</header>
+
+
+
+
+<div class="nav_fixed">
+  <div class="nav_component">
+    <div class="nav_container">
+      <div>
+        <a href="#" id="trig"></a>
+        <ul class="right">
+          <li>
+            <a href="https://www.hotelwestlandseattle.com" class="link-block">Back to Home</a>
+          </li>
+          <div class="social-icons-wrapper">
+            <a href="https://www.instagram.com/hotelwestlandseattle/" target="_blank" class="w-inline-block">
+              <img
+                src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f19e38a51d9d019b257b54_InstagramLogo.svg"
+                alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/aparium-hotel-group/" class="w-inline-block">
+              <img
+                src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f19e385210d7b111194f05_LinkedinLogo.svg"
+                alt="LinkedIn">
+            </a>
+          </div>
+          <li id="res"></li>
+          <li id="cart"></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+#MyViewGrp_txMoreNoTabber, .WsIbeDetails #MyViewGrp_txMore {
+  display: none
+}
+
+#header ul {
+  margin: 0
+}
+
+#header li {
+  display: inline-block;
+  padding: 0 0 0 20px
+}
+
+#header li a, #ws-utility a {
+  color: #f0f0ef;
+  border-bottom: 2px solid #2f3437;
+  font-size: 10px
+}
+
+#header {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px
+}
+
+#trig {
+  float: right
+}
+
+#ws-utility {
+  display: none
+}
+
+#cart a {
+  background-color: #c07759;
+  border: 0 none;
+  padding: 5px 15px
+}
+
+#cart a:hover {
+  background-color: #5c7e87;
+  border: 0 none
+}
+
+@media screen {
+  header {
+    background-color: #2f3437
+  }
+
+  #header {
+    padding: 20px
+  }
+}
+
+@media screen and (max-width:1232px) {
+  #header li {
+    display: block
+  }
+
+  #trig span {
+    height: 1px;
+    width: 25px;
+    display: block;
+    margin: 6px;
+    background-color: #fff
+  }
+
+  #header .right {
+    float: none;
+    clear: both;
+    text-align: left
+  }
+
+  #header li {
+    line-height: 0
+  }
+
+  #header li a {
+    font-size: 0;
+    color: #000;
+    border: 0 none
+  }
+
+  #header.open li {
+    line-height: 20px;
+    padding: 25px 9px
+  }
+
+  #header.open li a {
+    font-size: 20px
+  }
+
+  #header.open ul {
+    background-color: #fff
+  }
+
+  #cart {
+    opacity: 0
+  }
+
+  .open #cart {
+    opacity: 1
+  }
+}
+
+@media screen and (max-width:768px) {
+  #address, #social, #ap {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0
+  }
+
+  #footer .right a, #footer span {
+    width: 100%
+  }
+}
+
+@media screen and (max-width:700px) {
+  .ws-results hgroup h1 {
+    font-weight: 400
+  }
+}
+
+@media screen and (min-width:450px) {
+  .ws-add-ons article {
+    width: 50%
+  }
+}
+
+@media screen and (min-width:1025px) {
+  header, footer, #ws-utility b, #fmMain {
+    font-family: "Libre Franklin", dubai, helvetica, sans-serif
+  }
+
+  #ws-calendar {
+    font-size: 80%
+  }
+}
+
+@media print {
+  header, footer .right, .ws-nav-journey, .ws-cart-details .ws-open-close, #MyFooter_dvPrivacyPolicy, #MyFooter_dvPrivacyManage {
+    display: none
+  }
+
+  fieldset {
+    border: 0 none
+  }
+
+  #footercontent a {
+    font-size: 0
+  }
+}
+
+
+
+<script>
+function makeSVG(color) {
+  return '<svg xmlns="http://www.w3.org/2000/svg" fill="' + color + '" viewBox="0 0 ';
+}
+var oshost = 'url("//cdn.shrglobal.com/'
+, css = '@font-face{font-family:"Libre Franklin";src:url(//cdn.shrglobal.com/CrsMedia/P15252/bbe/tradegothicltstd-boldext.woff) format("woff"),url(//cdn.shrglobal.com/CrsMedia/P15252/bbe/tradegothicltstd-boldext.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:fontawesome;src:url(//cdn.shrglobal.com/CrsMedia/P14254/bbe/fb_In_tw.woff) format("woff"),url(//cdn.shrglobal.com/CrsMedia/P14254/bbe/fb_In_tw.ttf) format("truetype");font-weight:400;font-style:normal}';
+var osbeg = oshost + 'CrsMedia/C84/bbe/OpenSans-'
+, osend = 'VariableFont_wght.woff2") format("woff2-variations"),';
+var oswoff2 = osbeg + osend
+, osiwoff2 = osbeg + 'Italic-' + osend
+, beg = '<img alt="" src="data:image/svg+xml;base64,'
+, ap = '154 35"><g stroke-width="1" fill-rule="evenodd"><g><path d="M4.85659416,34.518042 C4.19619035,32.3284435 3.56893588,30.2479758 2.40526474,28.0217094 C1.43058793,30.3077794 0.632851114,32.2865373 0,34.7109851 C1.76208137,34.6699519 3.23313732,34.8908325 4.85659416,34.518042 Z M32.4532079,8.49953583 C32.6706159,10.3010655 32.675782,12.1340248 32.4579435,13.9333719 C31.8961267,18.5788477 30.4784541,20.1752117 26.0205131,21.406206 C25.8500307,21.4533505 25.7755523,21.5572429 25.8211865,21.8667376 C29.3483628,22.1168652 32.7209857,21.5520047 35.9007396,19.8687727 C42.5736595,16.3381761 41.7698956,5.15751712 36.110829,2.09749215 C33.106293,0.472754214 29.9282611,0.077701062 26.6103131,0.374973102 C30.6683094,2.47770353 31.9254014,4.1299424 32.4532079,8.49953583 Z M75.9770051,30.7006499 C75.9494524,28.8126887 75.9425642,26.924291 75.9361066,25.0354568 C75.9253438,21.7205025 74.4043485,19.3990741 71.4958165,17.9284287 C70.2163379,17.2810654 68.8081366,17.0540735 67.3495654,16.5341749 C68.5842709,15.9636395 69.768176,15.6606927 70.8143176,15.0172581 C74.6049667,12.6844801 75.6304438,6.92674411 72.8248038,3.6135359 C70.5207092,0.892252644 64.0664888,-0.684031259 60.5156344,0.634267657 C60.7842732,0.949873656 61.147194,0.921499673 61.4773959,0.986978096 C64.367416,1.56056908 65.742468,2.94521947 66.1002226,5.87734325 C66.2844813,7.38422002 66.3443223,8.9255821 66.2737185,10.4424989 C66.0855852,14.4781524 64.6584414,15.9295907 60.6594251,16.3517083 C60.4527798,16.3735345 60.401549,16.4778634 60.6034586,16.8126764 C60.8837213,17.0689153 61.402487,16.9497446 61.8773406,17.0016908 C65.6666981,17.4159509 67.4606372,19.4754656 67.4313625,23.3509152 C67.4197387,24.8761259 67.371091,26.4070115 67.4735526,27.9256744 C67.646618,30.4915555 68.7620719,32.5331727 71.1173974,33.6733703 C73.2944913,34.7275729 75.601169,34.9148412 78.0245152,34.3434329 C76.4402349,33.5694779 75.9993917,32.2503059 75.9770051,30.7006499 Z M82.0967184,34.5590751 L89.8782041,34.5590751 L89.8782041,0.597163218 L82.0967184,0.597163218 L82.0967184,34.5590751 Z M52.9976215,34.5647499 L62.3199058,34.5647499 C57.6200177,23.0968589 53.0161334,11.8642537 48.4122492,0.631211998 C48.2400448,0.655657276 48.0678404,0.680102554 47.8956361,0.704984354 C46.558469,4.43638142 45.2208715,8.16777848 43.8367787,12.0292594 C46.9373187,19.6561861 49.9827532,27.1486637 52.9976215,34.5647499 Z M13.6997198,0.556130073 C13.5524851,0.571408371 13.4052503,0.58668667 13.2584461,0.602401492 C11.8958789,4.40495178 10.5328812,8.20793858 9.15395459,12.0554507 C12.232108,19.6134068 15.2891663,27.1207263 18.340628,34.614077 L27.6642039,34.614077 C22.9057662,23.0095544 18.302743,11.782624 13.6997198,0.556130073 Z M134.107609,10.8187816 C133.672362,12.1593432 133.72919,13.2912468 134.346112,14.5549804 C136.280398,18.5186076 138.116096,22.5315619 139.997429,26.5222535 C141.284657,29.2522672 142.58437,31.9774792 143.825533,34.5935604 L153.125,34.5935604 C147.863726,23.0540797 142.717397,11.7669091 137.351939,0 C136.182672,3.93612627 135.216174,7.40124441 134.107609,10.8187816 Z M126.856943,34.480501 C128.170002,30.3029776 129.48306,26.1254543 130.799132,21.9374543 C127.407567,14.7570905 124.045276,7.64045892 120.709247,0.578392736 L111.490715,0.578392736 C116.54147,12.0689829 121.475126,23.2937307 126.409212,34.518915 L126.856943,34.480501 Z M115.788076,33.3394304 C114.41862,34.8301558 112.827882,34.729319 111.41021,34.8899594 C108.605,35.206875 105.83251,34.8292828 103.158176,33.8859569 C99.5139004,32.6008338 97.3467082,29.8568513 97.2425246,26.0900959 C97.0113402,17.7363587 97.1719208,9.37170842 97.1826835,1.01142337 C97.1826835,0.888760461 97.3088233,0.766534072 97.4336714,0.539105683 L104.971057,0.539105683 C105.51221,1.36806252 105.304703,2.18959847 105.306425,2.96529952 C105.323646,10.4547215 105.312022,17.943707 105.321493,25.4326925 C105.322785,26.7378958 105.315466,28.0391703 105.650834,29.3282222 C106.431781,32.3284435 107.891213,33.5651127 110.909956,33.8558369 C112.470558,34.0064372 113.962279,33.5681683 115.788076,33.3394304 Z"></path></g></g></svg>'
+, logo = '250 24"><g stroke-width="1" fill-rule="evenodd"><g><path d="M243.097128,9.75828096 C240.203649,8.56403811 238.983087,7.88761403 238.983087,6.41816339 C238.983087,5.5982161 239.921883,4.05400365 242.326054,4.05400365 C244.165418,4.05400365 245.186402,5.06093655 245.719034,5.8612609 L249.190221,3.9263734 C248.48047,2.77007906 246.390717,0 242.326054,0 C237.551479,0 235.008416,3.76128117 235.008416,6.41800122 C235.008416,10.7663491 238.826515,12.3410501 241.614391,13.4906953 C244.695501,14.7616461 246.025329,15.5052098 246.025329,17.2907359 C246.025329,18.1937158 245.3992,19.9459964 242.326054,19.9459964 C239.802423,19.9459964 238.976238,17.6801135 238.976238,16.5512264 L235.008416,16.53955 C235.008416,20.667018 237.75472,23.9792418 242.326054,23.9792418 C247.560947,23.9792418 250,19.9638354 250,17.2907359 C250,12.6448003 246.078051,10.9885263 243.097128,9.75828096 Z M114.085504,9.75828096 C111.192025,8.56403811 109.971463,7.88761403 109.971463,6.41816339 C109.971463,5.5982161 110.910418,4.05400365 113.31443,4.05400365 C115.153794,4.05400365 116.174778,5.06093655 116.70741,5.8612609 L120.178597,3.9263734 C119.468846,2.77007906 117.379094,0 113.31443,0 C108.539856,0 105.996793,3.76128117 105.996793,6.41800122 C105.996793,10.7663491 109.814891,12.3410501 112.602927,13.4906953 C115.683878,14.7616461 117.013706,15.5052098 117.013706,17.2907359 C117.013706,18.1937158 116.387576,19.9459964 113.31443,19.9459964 C110.790959,19.9459964 109.964455,17.6801135 109.964455,16.5512264 L105.996793,16.53955 C105.996793,20.667018 108.743097,23.9792418 113.31443,23.9792418 C118.549483,23.9792418 120.988376,19.9638354 120.988376,17.2907359 C120.988376,12.6448003 117.066427,10.9885263 114.085504,9.75828096 Z M14.8479132,17.5894587 C13.607282,19.2077843 12.1909651,19.9459964 10.2549179,19.9459964 C8.31918928,19.9459964 6.90255383,19.2077843 5.66192267,17.5894587 C4.58885397,16.1895804 3.99776626,14.2045814 3.99776626,12 C3.99776626,9.79541861 4.58885397,7.8105818 5.66192267,6.41054125 C6.90207599,4.79286438 8.31791504,4.05465234 10.252688,4.05416582 C13.3933691,4.05530103 14.8429755,5.2615447 15.5146588,7.49483073 L19.8026331,7.44634097 C19.8026331,6.37534969 19.1591423,4.45359822 17.728968,2.99760795 C15.7357394,0.968173525 13.3212153,0 10.252688,0 C7.23576739,0 4.87890268,1.11721062 2.85827784,3.50991283 C1.01509082,5.69227651 0,8.70739915 0,12 C0,15.2926009 1.01509082,18.3077235 2.85827784,20.4900872 C4.88049548,22.8847355 7.23098899,24 10.2549179,24 C13.2791654,24 15.6293404,22.8847355 17.6518766,20.4900872 C18.2005958,19.8402595 18.674135,19.1151835 19.0712198,18.3322116 L15.5756631,16.4038111 C15.3657321,16.8330833 15.1229896,17.2307318 14.8479132,17.5894587 Z M195.454438,15.5361849 C195.454438,12.8806 193.687387,11.0963714 191.057357,11.0963714 C188.503782,11.0963714 186.917513,12.7977296 186.917513,15.5361849 C186.917513,18.2574498 188.503782,19.9479424 191.057357,19.9479424 C193.728641,19.9479424 195.454438,18.2162579 195.454438,15.5361849 Z M186.525366,0.776809244 L193.526674,0.776809244 C196.977791,0.776809244 199.775702,3.62538009 199.775702,7.13918508 L199.775702,23.1576728 L195.777777,23.1576728 L195.777777,22.1982566 C194.280227,23.2971417 192.826798,23.9949726 191.048915,23.9949726 C186.507208,23.9949726 182.949692,20.272613 182.949692,15.5207784 C182.949692,11.3026556 185.521425,7.04658423 191.048915,7.04658423 C194.339957,7.04658423 195.777777,8.87719441 195.777777,8.87719441 L195.777777,7.71392662 C195.777777,6.03219136 194.43887,4.66880195 192.787137,4.66880195 L186.525366,4.66880195 L186.525366,0.776809244 Z M144.685244,6.93257653 C144.685244,5.63843503 143.871324,4.67382931 142.731676,4.67382931 L134.437175,4.67382931 L134.437175,9.19116156 L142.731676,9.19116156 C143.871324,9.19116156 144.685244,8.22655585 144.685244,6.93257653 Z M148.659914,6.93290087 C148.659914,11.1189134 145.596962,13.0831543 143.257618,13.0831543 L146.612371,23.1627002 L142.423947,23.1627002 L139.066486,13.0831543 C136.699427,13.0765052 134.437175,13.0831543 134.437175,13.0831543 L134.437175,23.1627002 L130.455018,23.1627002 L130.455018,0.781836611 L142.731676,0.781836611 C146.353541,0.781836611 148.659914,3.37514697 148.659914,6.93290087 Z M43.0031843,6.93257653 C43.0031843,5.63843503 42.189264,4.67382931 41.0496163,4.67382931 L32.7551154,4.67382931 L32.7551154,9.19116156 L41.0496163,9.19116156 C42.189264,9.19116156 43.0031843,8.22655585 43.0031843,6.93257653 Z M46.977855,6.93290087 C46.977855,11.1189134 43.9147432,13.0831543 41.5753993,13.0831543 L44.9301526,23.1627002 L40.7418876,23.1627002 L37.3842672,13.0831543 C35.0173679,13.0765052 32.7551154,13.0831543 32.7551154,13.0831543 L32.7551154,23.1627002 L28.7729586,23.1627002 L28.7729586,0.781836611 L41.0496163,0.781836611 C44.6713227,0.781836611 46.977855,3.37514697 46.977855,6.93290087 Z M172.264877,12 C172.264877,9.79541861 171.673949,7.8105818 170.600721,6.41054125 C169.36009,4.79221569 167.943614,4.05400365 166.007726,4.05400365 C164.071838,4.05400365 162.655362,4.79221569 161.41473,6.41054125 C160.341662,7.8105818 159.750574,9.79541861 159.750574,12 C159.750574,14.2045814 160.341662,16.1895804 161.41473,17.5894587 C162.655362,19.2077843 164.071838,19.9459964 166.007726,19.9459964 C167.943614,19.9459964 169.36009,19.2077843 170.600721,17.5894587 C171.673949,16.1895804 172.264877,14.2045814 172.264877,12 Z M173.404525,3.50991283 C175.247553,5.69227651 176.262644,8.70739915 176.262644,12 C176.262644,15.2926009 175.247553,18.3077235 173.404525,20.4900872 C171.382148,22.8847355 169.031814,24 166.007726,24 C162.983637,24 160.633303,22.8847355 158.610926,20.4900872 C156.767899,18.3077235 155.752808,15.2926009 155.752808,12 C155.752808,8.70739915 156.767899,5.69227651 158.610926,3.50991283 C160.633303,1.11526454 162.983637,0 166.007726,0 C169.031814,0 171.382148,1.11526454 173.404525,3.50991283 Z M217.862572,4.67399149 L213.446377,4.67399149 L213.446377,19.2707075 L217.862572,19.2707075 C221.986807,19.2707075 223.826012,16.8929252 223.826012,11.969998 C223.826012,7.0516116 221.986807,4.67399149 217.862572,4.67399149 Z M227.808328,11.9722684 C227.808328,18.7704034 224.491961,23.1628624 219.073099,23.1628624 L209.478715,23.1628624 L209.478715,0.781836611 L219.078356,0.781836611 C224.491961,0.781836611 227.808328,5.17429556 227.808328,11.9722684 Z M70.5828179,12 C70.5828179,9.79541861 69.9918895,7.8105818 68.9186615,6.41054125 C67.6780303,4.79221569 66.2615542,4.05400365 64.3256662,4.05400365 C62.3899376,4.05400365 60.9733021,4.79221569 59.732671,6.41054125 C58.6596023,7.8105818 58.0685146,9.79541861 58.0685146,12 C58.0685146,14.2045814 58.6596023,16.1895804 59.732671,17.5894587 C60.9733021,19.2077843 62.3899376,19.9459964 64.3256662,19.9459964 C66.2615542,19.9459964 67.6780303,19.2077843 68.9186615,17.5894587 C69.9918895,16.1895804 70.5828179,14.2045814 70.5828179,12 Z M71.7224656,3.50991283 C73.5656526,5.69227651 74.5805842,8.70739915 74.5805842,12 C74.5805842,15.2926009 73.5656526,18.3077235 71.7224656,20.4900872 C69.7000887,22.8847355 67.3497545,24 64.3256662,24 C61.3017373,24 58.9512438,22.8847355 56.9288669,20.4900872 C55.0858391,18.3077235 54.0707483,15.2926009 54.0707483,12 C54.0707483,8.70739915 55.0858391,5.69227651 56.9288669,3.50991283 C58.9512438,1.11526454 61.3017373,0 64.3256662,0 C67.3497545,0 69.7000887,1.11526454 71.7224656,3.50991283 Z M90.9053406,9.75828096 C88.0118619,8.56403811 86.7913,7.88761403 86.7913,6.41816339 C86.7913,5.5982161 87.7300957,4.05400365 90.1342666,4.05400365 C91.9736309,4.05400365 92.9946151,5.06093655 93.5272471,5.8612609 L96.998434,3.9263734 C96.2886827,2.77007906 94.1989304,0 90.1342666,0 C85.3596922,0 82.8166293,3.76128117 82.8166293,6.41800122 C82.8166293,10.7663491 86.6347279,12.3410501 89.422604,13.4906953 C92.5037144,14.7616461 93.8335423,15.5052098 93.8335423,17.2907359 C93.8335423,18.1937158 93.207413,19.9459964 90.1342666,19.9459964 C87.6106358,19.9459964 86.7842917,17.6801135 86.7842917,16.5512264 L82.8166293,16.53955 C82.8166293,20.667018 85.5629334,23.9792418 90.1342666,23.9792418 C95.3691598,23.9792418 97.808213,19.9638354 97.808213,17.2907359 C97.808213,12.6448003 93.886264,10.9885263 90.9053406,9.75828096 Z"></path></g></g></svg>';
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+  vars[key] = value;
+});
+$(document).ready(function() {
+  $('head').append('<link rel="shortcut icon" href="//cdn.shrglobal.com/CrsMedia/P15252/bbe/favicon.png">');
+  $('body').removeClass('ws-pagewidth-compact');
+  if (vars['subchan'] === 'GOO' || vars['subchan'] === 'GDB' || vars['subchan'] === 'GO' || vars['subchan'] === 'WGH') {
+      $('#buViewItem').click();
+      $('#buMoEdit').click();
+  }
+  if (typeof (vars['group']) !== 'undefined')
+      css += '.WsIbeDetails .calMonth .calDays div span{display:none}';
+  if (navigator.appVersion.indexOf('Mac') == -1)
+      css += '@font-face{font-family:"Open Sans";src:' + oswoff2 + oshost + 'IBE/fonts/OpenSans-Light-webfont.woff") format("woff"),' + oshost + 'IBE/fonts/OpenSans-Light-webfont.ttf") format("truetype"),' + oshost + 'IBE/fonts/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");font-weight:300;font-style:normal}@font-face{font-family:"Open Sans";src:' + oswoff2 + oshost + 'IBE/fonts/OpenSans-Regular-webfont.woff") format("woff"),' + oshost + 'IBE/fonts/OpenSans-Regular-webfont.ttf") format("truetype"),' + oshost + 'IBE/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Open Sans";src:' + osiwoff2 + oshost + 'IBE/fonts/OpenSans-Italic-webfont.woff") format("woff"),' + oshost + 'IBE/fonts/OpenSans-Italic-webfont.ttf") format("truetype"),' + oshost + 'IBE/fonts/OpenSans-Italic-webfont.svg#OpenSansItalic") format("svg");font-weight:400;font-style:italic}@font-face{font-family:"Open Sans";src:' + oswoff2 + oshost + 'IBE/fonts/OpenSans-Bold-webfont.woff") format("woff"),' + oshost + 'IBE/fonts/OpenSans-Bold-webfont.ttf") format("truetype"),' + oshost + 'IBE/fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");font-weight:700;font-style:normal}@font-face{font-family:"Open Sans";src:' + oswoff2 + oshost + 'IBE/fonts/OpenSans-Bold-webfont.woff") format("woff"),' + oshost + 'IBE/fonts/OpenSans-Bold-webfont.ttf") format("truetype"),' + oshost + 'IBE/fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");font-weight:800;font-style:normal}@font-face{font-family:"Open Sans";src:' + osiwoff2 + oshost + 'IBE/fonts/OpenSans-BoldItalic-webfont.woff") format("woff"),' + oshost + 'IBE/fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"),' + oshost + 'IBE/fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");font-weight:700;font-style:italic}@media screen and (min-width:1025px){body,h1,.ws-button,.ws-cart-cancel,.ws-results hgroup h1,.ws-item-title h1,.ws-results hgroup h3,.ws-results .ws-related-data h3,#hdWsCart,.ws-full-details h3{font-family:"Open Sans","Droid Sans","Segoe UI",sans-serif}}';
+  $('body').append('<style>' + css + '</style>');
+  $('#MyHeading_buHeaderCart').clone().appendTo('#cart');
+  $('#buMyResv').clone().appendTo('#res');
+  $('#MyHeading_dvMyResv a,#ws-cart').remove();
+  $('#buMyResv').click(function(e) {
+      location.href = 'change.aspx?propertyID=' + WsVars.HotelID;
+      e.stopPropagation();
+  });
+  $('#logo').html(beg + btoa(makeSVG('#f0f0ef') + logo) + '" width="250" height="24"/>');
+  var s;
+  $('.ws-property-phone').each(function(index, elem) {
+      s = $(this).html();
+      $(this).html(s.substring(0, 9) + '-' + s.substring(9, 13));
+  });
+  $('body').prepend(beg + btoa(makeSVG('#000') + logo) + '" width="250" height="24"/>');
+  $('#ap').html(beg + btoa(makeSVG('#fff') + ap) + '" width="154" height="35"/>');
+  $('#en').prepend(beg + btoa('<svg xmlns="http://www.w3.org/2000/svg" fill="#f0f0ef"><g transform="matrix(.008,0,0,-.008,0,15)" style="stroke:none"><path d="M1664 32v768q-32 -36 -69 -66q-268 -206 -426 -338q-51 -43 -83 -67t-86.5 -48.5t-102.5 -24.5h-1h-1q-48 0 -102.5 24.5t-86.5 48.5t-83 67q-158 132 -426 338q-37 30 -69 66v-768q0 -13 9.5 -22.5t22.5 -9.5h1472q13 0 22.5 9.5t9.5 22.5zM1664 1083v11v13.5t-0.5 13 t-3 12.5t-5.5 9t-9 7.5t-14 2.5h-1472q-13 0 -22.5 -9.5t-9.5 -22.5q0 -168 147 -284q193 -152 401 -317q6 -5 35 -29.5t46 -37.5t44.5 -31.5t50.5 -27.5t43 -9h1h1q20 0 43 9t50.5 27.5t44.5 31.5t46 37.5t35 29.5q208 165 401 317q54 43 100.5 115.5t46.5 131.5z M1792 1120v-1088q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v1088q0 66 47 113t113 47h1472q66 0 113 -47t47 -113z"/></g></svg>') + '" width="24" height="16"/>');
+  $('#trig').click(function() {
+      $('#header').toggleClass('open');
+  });
+});
+$(document).ajaxComplete(function(event, xhr, settings) {
+  if (settings.url.includes('xml/getaddonlist.aspx')) {
+      $('#buAddonMore').click();
+  }
+});
+</script>
+
+
+
+
+<script>
+
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+  vars[key] = value;
+});
+$(document).ready(function() {
+  $('head').append('<link rel="shortcut icon" href="//cdn.shrglobal.com/CrsMedia/P15252/bbe/favicon.png">');
+  $('body').removeClass('ws-pagewidth-compact');
+  if (vars['subchan'] === 'GOO' || vars['subchan'] === 'GDB' || vars['subchan'] === 'GO' || vars['subchan'] === 'WGH') {
+      $('#buViewItem').click();
+      $('#buMoEdit').click();
+  }
+  if (typeof (vars['group']) !== 'undefined')
+      css += '.WsIbeDetails .calMonth .calDays div span{display:none}';
+
+  
+  $('#MyHeading_buHeaderCart').clone().appendTo('#cart');
+  $('#buMyResv').clone().appendTo('#res');
+  $('#MyHeading_dvMyResv a,#ws-cart').remove();
+  $('#buMyResv').click(function(e) {
+      location.href = 'change.aspx?propertyID=' + WsVars.HotelID;
+      e.stopPropagation();
+  });
+  $('.ws-property-phone').each(function(index, elem) {
+      s = $(this).html();
+      $(this).html(s.substring(0, 9) + '-' + s.substring(9, 13));
+  });
+
+  $('#ap').html(beg + btoa(makeSVG('#fff') + ap) + '" width="154" height="35"/>');
+  $('#en').prepend(beg + btoa('<svg xmlns="http://www.w3.org/2000/svg" fill="#f0f0ef"><g transform="matrix(.008,0,0,-.008,0,15)" style="stroke:none"><path d="M1664 32v768q-32 -36 -69 -66q-268 -206 -426 -338q-51 -43 -83 -67t-86.5 -48.5t-102.5 -24.5h-1h-1q-48 0 -102.5 24.5t-86.5 48.5t-83 67q-158 132 -426 338q-37 30 -69 66v-768q0 -13 9.5 -22.5t22.5 -9.5h1472q13 0 22.5 9.5t9.5 22.5zM1664 1083v11v13.5t-0.5 13 t-3 12.5t-5.5 9t-9 7.5t-14 2.5h-1472q-13 0 -22.5 -9.5t-9.5 -22.5q0 -168 147 -284q193 -152 401 -317q6 -5 35 -29.5t46 -37.5t44.5 -31.5t50.5 -27.5t43 -9h1h1q20 0 43 9t50.5 27.5t44.5 31.5t46 37.5t35 29.5q208 165 401 317q54 43 100.5 115.5t46.5 131.5z M1792 1120v-1088q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v1088q0 66 47 113t113 47h1472q66 0 113 -47t47 -113z"/></g></svg>') + '" width="24" height="16"/>');
+  $('#trig').click(function() {
+      $('#header').toggleClass('open');
+  });
+});
+$(document).ajaxComplete(function(event, xhr, settings) {
+  if (settings.url.includes('xml/getaddonlist.aspx')) {
+      $('#buAddonMore').click();
+  }
+});
+</script>
