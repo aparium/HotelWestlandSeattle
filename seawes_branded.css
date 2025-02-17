@@ -233,8 +233,6 @@ blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
   margin: 0;
 }
 
-body {}
-
 body {
   margin: 0;
   background-color: var(--sandstone);
@@ -340,44 +338,6 @@ a:focus {
 #ws-calendar .calHead {
   padding: 15px;
   color: var(--color-brand-1);
-}
-
-#ws-main {
-  background-color: var(--brick);
-  padding: 0;
-  max-width: 1200px !important;
-  color: var(--cast-iron);
-}
-
-#ws-main section#ws-calendar .ws-inner {
-  padding-top: 4.572em;
-}
-
-
-#ws-main section.ws-component .ws-inner {
-  margin: 2rem 0 2rem 0;
-  border-radius: 4px;
-  background-color: var(--brick);
-  padding: 0px;
-}
-
-
-#ws-main section {
-  clear: both;
-  margin-right: auto;
-  margin-bottom: 1.429em;
-  margin-left: auto;
-  width: 100%;
-  max-width: 1143px;
-}
-
-#ws-main section.ws-property-info {
-  margin: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  background-color: var(--cast-iron);
-  padding: 5rem 2rem 5rem 2rem;
-  max-width: 1040px;
 }
 
 .ws-drawer-message,
@@ -595,20 +555,8 @@ li#liAbout {
   text-overflow: ellipsis;
 }
 
-.ws-element,
-.ws-form-item {
-  margin-right: unset !important;
-  margin-left: unset !important;
-  border-color: var(--color-brand-1);
-  border-radius: 0px !important;
-  color: var(--color-brand-1);
-}
 
-.ws-element {
-  outline: none;
-  border-radius: var(--border-radius-0);
-  background-color: transparent;
-}
+
 
 .ws-itinerary span.ws-form-item .ws-element.ws-calendar-dates input,
 .ws-mod-dates .ws-element input {
@@ -700,6 +648,7 @@ b.ws-icon span {
 #ws-check-out,
 #ws-occupants {
   padding-left: 0;
+  color: var(--brick)
 }
 
 span.ws-pre.ws-property-city {
@@ -746,12 +695,7 @@ div#dvItinerary {
   color: var(--sandstone);
 }
 
-#ws-update, .ws-no-options #ws-update {
-  border: var(--cast-iron);
-  background-color: var(--cast-iron);
-  width: 15%;
-  color: var(--sandstone);
-}
+
 
 input, select, textarea, button, .ws-button {
   color: var(--sandstone);
@@ -768,11 +712,6 @@ input, select, textarea, button, .ws-button {
   color: var(--sandstone);
   text-align: center;
 }
-
-.ws-cart-view2, #ws-main .ws-itinerary section .ws-inner {
-  background-color: var(--sandstone);
-}
-
 
 .ws-number {
   font-weight: 700;
@@ -815,20 +754,6 @@ input, select, textarea, button, .ws-button {
   background-color: var(--sandstone);
 }
 
-
-#ws-main section {
-  clear: both;
-  margin-right: auto;
-  margin-bottom: 1.429em;
-  margin-left: auto;
-  width: 100%;
-  max-width: 1040px;
-}
-
-#ws-main section.ws-component {
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .num-plusminus .mpbtn {
   cursor: pointer;
@@ -894,15 +819,6 @@ p#txLocation ,
   text-transform: none ;
 }
 
-.ws-results article.ws-open hgroup {
- border-bottom: 0px;
-}
-
-.ws-results .ws-related-data h3 {
-  font-family: var(--font-family-1);
-  text-transform: uppercase;
-}
-
 
 .ws-element, .ws-form-item {
   margin-right: unset !important;
@@ -931,11 +847,164 @@ ul.cbUpgrade.ws-select-options {
   white-space: nowrap;
 }
 
+
+.ws-results article.ws-open hgroup {
+  border-bottom: 0px;
+ }
+ 
+ .ws-results .ws-related-data h3 {
+   font-family: var(--font-family-1);
+   text-transform: uppercase;
+ }
+
+ 
+
+element.style {
+  width: unset;
+}
+
+.ws-element, .ws-form-item {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  border-width: thin;
+  border-radius: 0px !important;
+}
+
+a#txOccupants {
+  color: var(--sandstone);
+}
+
+
+
+
+input#buUpdateResults {
+  border: 1px solid var(--brick);
+  border-radius: 0px;
+  background-color: var(--pine);
+  padding-top: 3px;
+}
+
+#ws-update, .ws-no-options #ws-update {
+  border: var(--cast-iron);
+  background-color: var(--cast-iron);
+  width: 15%;
+  color: var(--sandstone);
+}
+
+#ws-update, .ws-no-options #ws-update {
+  border: unset; 
+ background-color:unset;
+ }
+
+
+
+ .ws-element {
+  outline: none;
+  border-radius: var(--border-radius-0);
+  background-color: transparent;
+}
+
+.ws-element,
+.ws-form-item {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  border-color: var(--color-brand-1);
+  border-radius: 0px !important;
+  color: var(--color-brand-1);
+}
+
+#ws-main section.ws-property-info {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  max-height: 20rem;
+}
+
+#ws-main section#ws-calendar .ws-inner {
+  padding-top: 4.572em;
+}
+
+
+
 ---------------------------------------------------
 ---------------------------------------------------
 ---------------------------------------------------
 ---------------------------------------------------
 NOT BELOW HERE
+
+
+
+
+
+#ws-main section.ws-component .ws-inner {
+  background-color: unset;
+}
+
+
+
+.ws-cart-view2, #ws-main .ws-itinerary section .ws-inner {
+  background-color: var(--sandstone);
+}
+
+
+#ws-main section.ws-component .ws-inner {
+  margin: 2rem 0 2rem 0;
+  border-radius: 4px;
+  background-color: var(--brick);
+  padding: 0px;
+}
+
+
+
+#ws-main section.ws-component .ws-inner {
+  margin: 2rem 0 2rem 0;
+  border-color: var(--cast-iron);
+  border-radius: 4px;
+  background-color: var(--brick);
+  padding: 0px;
+  padding: 20px 0 20px 0;
+  color: var(--cast-iron);
+}
+
+
+
+
+#ws-main section {
+  clear: both;
+  margin-right: auto;
+  margin-bottom: 1.429em;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1040px;
+}
+
+#ws-main section.ws-component {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#ws-main section {
+  clear: both;
+  margin-right: auto;
+  margin-bottom: 1.429em;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1143px;
+}
+
+#ws-main section.ws-property-info {
+  margin: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  background-color: var(--cast-iron);
+  padding: 5rem 2rem 5rem 2rem;
+  max-width: 1040px;
+}
+
+
+
+
+
 
 
 lbEnterCodePrompt {
@@ -1126,10 +1195,6 @@ div.dtSelected span {
   content: '';
 }
 
-#ws-main section.ws-component .ws-inner {
-  background-color: unset;
-}
-
 .ws-property-item .ws-property-desc,
 .ws-property-item .ws-property-content {
   float: inline-start;
@@ -1286,10 +1351,4 @@ div#ws-property-info-about {
   padding: 5px;
   width: 15%;
   color: #eeebe3;
-}
-
-#ws-main section.ws-property-info {
-  margin-top: 5rem;
-  margin-bottom: 0;
-  max-height: 20rem;
 }
