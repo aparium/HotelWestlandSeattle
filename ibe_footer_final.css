@@ -1,0 +1,270 @@
+<style>
+@font-face {
+  font-family: Apercu;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.woff2") format("woff2")
+}
+@font-face {
+  font-family: Apercu;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.woff2") format("woff2")
+}
+@font-face {
+  font-family: Prestige;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2") format("woff2")
+}
+@font-face {
+  font-family: Prestige;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff2") format("woff2")
+}
+footer {
+  background-color: var(--sandstone)!important;
+  width: auto;
+  height: auto;
+  text-transform: none;
+  line-height: normal;
+  padding: 0!important
+}
+
+h2.coming_soon {
+font-size: 1rem;
+
+}
+
+.custom-footer {
+  background-color: var(--brick)!important;
+  padding: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3rem;
+  padding: 2rem 3rem 4rem 3rem!important
+}
+.custom-footer-wrapper {
+  background-color: var(--brick);
+  max-width: 1040px;
+  padding: 4rem 0rem 3rem;
+  margin-top: -1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem
+}
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  height: 100%
+}
+.footer-address {
+  color: var(--cast-iron);
+  display: flex;
+  font-family: Apercu,sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  line-height: 1.3rem;
+  text-transform: uppercase
+}
+.footer-address-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem
+}
+.footer-terms-wrapper {
+  justify-content: space-between;
+  display: flex
+}
+.footer-terms-wrapper ul {
+  list-style: none;
+  padding: 0
+}
+.footer-terms-wrapper li {
+  margin-bottom: .5rem
+}
+.footer-partner-logos {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end
+}
+.footer-partner-logos img {
+  max-width: 150px
+}
+.footer-link {
+  text-align: right;
+  font-size: .9rem;
+  margin-bottom: auto;
+  text-wrap: balance
+}
+.footer-copywright {
+  text-align: right;
+  font-size: .9rem;
+  margin-bottom: auto;
+  text-wrap: balance
+}
+.footer-partner-logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-column-gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  grid-row-gap: 1rem
+}
+.footer-list {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding: 0;
+  width: auto
+}
+.footer-list-item {
+  line-height: .75rem;
+  list-style-type: none
+}
+.footer-link {
+  color: var(--cast-iron);
+  font-family: Prestige,sans-serif;
+  font-size: .75rem;
+  font-style: normal;
+  line-height: .5rem;
+  text-decoration: none
+}
+.footer-copywright {
+  color: var(--cast-iron);
+  font-family: Prestige,sans-serif;
+  font-size: .75rem;
+  font-style: normal;
+  line-height: .75rem;
+  text-decoration: none
+}
+.footer_link:hover {
+  text-decoration: underline
+}
+.partner-image1 {
+  max-width: 150px
+}
+.partner-image2 {
+  max-width: 75px
+}
+
+@media screen and (max-width:500px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center
+  }
+  .footer-copywright,
+  .footer-left,
+  .footer-right {
+    align-items: center;
+    text-align: center
+  }
+  .footer-terms-wrapper {
+    justify-content: space-between;
+    display: flex
+  }
+  .footer-partner-logos {
+    justify-content: center
+  }
+  h2.coming_soon::before {
+    content: "Now Accepting Reservations";
+    display: block
+  }
+  h2.coming_soon::after {
+    content: "for July 1 + Beyond";
+    display: block
+  }
+  h2.coming_soon {
+    text-indent: -9999px
+  }
+  .custom-footer {
+    padding: 0
+  }
+  .custom-footer-wrapper {
+    margin-top: 0rem;
+    padding: 7rem 0 5rem;
+  }
+}
+
+
+</style>
+
+
+
+
+<body>
+  <footer class="custom-footer">
+    <div class="custom-footer-wrapper">
+      <div class="footer-grid">
+        <!-- Left Column -->
+        <div class="footer-left">
+          <div class="footer-address-wrapper">
+            <img
+              src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f1ee099a1f3d0ca90191f2_building_drawing.svg"
+              alt="drawing of building">
+            <address>
+              <div class="footer-address">
+                100 S. King Street
+                <br>
+                Seattle, WA
+              </div>
+            </address>
+          </div>
+          <div class="footer-terms-wrapper">
+            <ul role="list" class="footer-list">
+              <li class="footer-list-item"> <a href="/terms-of-use" class="footer-link"> Terms &amp;
+                  Conditions </a> </li>
+              <li class="footer-list-item"> <a href="/privacy-policy" class="footer-link"> Privacy Policy </a> </li>
+              <li class="footer-list-item"> <a href="/cookies" class="footer-link"> Cookie Statement </a> </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="footer-right">
+          <div class="footer-partner-logos">
+            <a href="https://urban-villages.com/" target="_blank">
+              <img
+                src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f1ee52dc4f6392d3c1c509_urban_villages.png"
+                alt="urban villages logo" class="partner-image1">
+            </a>
+            <a href="https://www.aparium.com/" target="_blank">
+              <img
+                src="https://res.cloudinary.com/drdgkdg7m/image/upload/c_fill,w_150,g_auto/v1734747429/Aparium_Slogan_Aparium_Slogan_Black_ls72fj.png"
+                alt="Aparium Hotel Group" class="partner-image2">
+            </a>
+          </div>
+          <div class="footer-copywright">
+            2024 © Copyright Aparium Hotel Group
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

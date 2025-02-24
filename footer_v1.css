@@ -1,0 +1,189 @@
+<style > 
+
+.custom-footer {
+  background-color: var(--sandstone);
+}
+
+.custom-footer-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 4rem 0rem 4rem;
+  background-color: var(--brick);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -30px;
+}
+
+.custom-footer-wrapper {
+  background-color: var(--brick);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 4rem 5rem 5rem 5rem;
+  position: relative;
+}
+
+.partner-image1 {
+  max-width: 150px;
+}
+
+.partner-image2 {
+  max-width: 75px;
+}
+
+.footer-address {
+  color: var(--cast-iron);
+  display: flex;
+  font-family: 'Apercu', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  line-height: 1.3rem;
+}
+
+.footer-address-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  align-content: center;
+  align-items: center;
+}
+
+.footer-list {
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.footer-list-item {
+  color: var(--cast-iron);
+  font-family: "Prestige", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  text-decoration: none;
+}
+
+.footer-link {
+  line-height: 0.75rem;
+  color: var(--cast-iron);
+  font-family: "Prestige", sans-serif;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.footer_link:hover {
+  text-decoration: underline;
+}
+
+.footer-terms-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.footer-partner-logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-column-gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  grid-row-gap: 1rem
+}
+
+.footer-inline-block {
+  display: inline-block;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .custom-footer-wrapper {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    background-color: var(--brick);
+    padding: 0px;
+  }
+}
+
+<style > @media screen and (max-width: 600px) {
+  .footer-address-wrapper {
+    align-items: center;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    align-content: center;
+    align-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer-partner-logos {
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+</style> 
+
+<footer id="custom-footer">
+  <div class="custom-footer-wrapper">
+    <section class="custom-footer-section">
+      <div class="footer-address-wrapper">
+        <div class="footer-address"> <img src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f1ee099a1f3d0ca90191f2_building_drawing.svg" alt="drawing of building">
+          <address>
+            <div class="footer-address"> 100 S. King Street <br/> Seattle, wa</div>
+          </address>
+        </div>
+        <div class="footer-partner-logos">
+          <a href="https://urban-villages.com/" target="_blank" class="footer-inline-block">
+              <img src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f1ee52dc4f6392d3c1c509_urban_villages.png" 
+                   alt="urban villages logo" 
+                   class="partner-image1">
+          </a> 
+          <a href="https://www.aparium.com/" target="_blank" class="footer-inline-block">
+              <img src="https://res.cloudinary.com/drdgkdg7m/image/upload/c_fill,w_150,g_auto/v1734747429/Aparium_Slogan_Aparium_Slogan_Black_ls72fj.png" 
+                   alt="Aparium Hotel Group" 
+                   class="partner-image1">
+          </a>
+      </div>
+      <div class="footer-terms-wrapper">
+        <ul class="footer-list">
+          <li class="footer-list-item"> <a data-w-id="00a36fca-0d8c-ddf6-ad32-4672b4ac91e3" href="/terms-of-use" class="footer-link"> Terms &amp;
+              Conditions</a> </li>
+          <li class="footer-list-item"> <a href="/privacy-policy" class="footer-link"> Privacy Policy</a> </li>
+          <li class="footer-list-item"> <a href="/cookies" class="footer-link"> Cookie Statement</a> </li>
+        </ul>
+        <div class="footer-link"> 2024 © Copyright Aparium Hotel Group</div>
+      </div>
+    </custom-footer-section>
+  </div>
+</custom-footer>

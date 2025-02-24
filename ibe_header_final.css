@@ -1,0 +1,442 @@
+<style > #MyViewGrp_txMoreNoTabber, .WsIbeDetails #MyViewGrp_txMore {
+  display: none
+}
+
+#header ul {
+  margin: 0
+}
+
+#header li {
+  display: inline-block;
+  padding: 0 0 0 20px
+}
+
+h2.coming_soon {
+  font-size: 1.5rem !important;
+  color: var(--brick) !important;
+  font-weight: 400;
+}
+
+#header li a, #ws-utility a {
+  color: #f0f0ef;
+  font-size: 10px
+}
+
+#header {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px
+}
+
+#trig {
+  float: right
+}
+
+#ws-utility {
+  display: none
+}
+
+#cart a {
+  color: var(--brick);
+  border: 0 none;
+  padding: 5px 15px
+}
+
+#cart a:hover {
+  color: var(--sandstone);
+  border: 0 none
+}
+
+@media screen {
+  header {
+    background-color: var(--brick)
+  }
+
+  #header {
+    padding: 20px
+  }
+}
+
+@media screen and (max-width:1232px) {
+  #header li {
+    display: block
+  }
+
+  #trig span {
+    height: 1px;
+    width: 25px;
+    display: block;
+    margin: 6px;
+    background-color: var(--brick)
+  }
+
+  #header .right {
+    float: none;
+    clear: both;
+    text-align: left
+  }
+
+  #header li {
+    line-height: 0
+  }
+
+  #header li a {
+    font-size: 0;
+    color: var(--brick);
+    border: 0 none
+  }
+
+  #header.open li {
+    line-height: 20px;
+    padding: 25px 9px
+  }
+
+  #header.open li a {
+    font-size: 20px
+  }
+
+  #header.open ul {
+    background-color: #fff
+  }
+
+  #cart {
+    opacity: 0
+  }
+
+  .open #cart {
+    opacity: 1
+  }
+}
+
+@media screen and (max-width:768px) {
+  #address, #social, #ap {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0
+  }
+
+  .responsive-hotel-logo {
+    max-height: 100px;
+    width: auto;
+    height: auto;
+  }
+
+  .coming-soon-logo-container {
+    padding-top: clamp(10px, 3vh, 80px);
+    padding-bottom: clamp(10px, 3vh, 80px);
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:500px) {
+  .ws-add-ons article {
+    width: 50%
+  }
+
+  .coming-soon-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -4rem;
+  }
+
+  .coming-soon-hero {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 5rem 0rem 5rem;
+    color: #fff;
+    background-color: var(--brick);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+
+  .coming-soon-logo-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    min-width: 1040px;
+    justify-content: flex-start;
+    padding-top: clamp(10px, 5vh, 120px);
+    padding-bottom: clamp(10px, 1vh, 120px);
+    background-color: var(--pine) !important;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .responsive-hotel-logo {
+    max-height: 75px;
+    width: auto;
+    height: auto;
+  }
+
+  h2.coming_soon {
+    font-size: .75em !important;
+  }
+
+  input, select, textarea, .ws-button {
+    font-size: 1em;
+    display: inline-block;
+    border-width: 1px;
+    /* padding-left: .715em; */
+    /* padding-right: .715em; */
+    position: relative;
+  }
+}
+
+@media print {
+  header, footer .right, .ws-nav-journey, .ws-cart-details .ws-open-close, #MyFooter_dvPrivacyPolicy, #MyFooter_dvPrivacyManage {
+    display: none
+  }
+
+  fieldset {
+    border: 0 none
+  }
+
+  #footercontent a {
+    font-size: 0
+  }
+}
+
+#buMyResv {
+  font-family: Prestige, sans-serif;
+  font-size: .85rem;
+  color: var(--brick);
+  font-weight: bold;
+  line-height: 1rem;
+  border: 0 none;
+  padding-left: 20px;
+}
+
+#cart a {
+  font-family: Prestige, sans-serif;
+  font-size: .85rem;
+  color: var(--brick);
+  font-weight: bold;
+  line-height: 1.125rem;
+  border: 0 none;
+  padding: 5px 5px;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 930px;
+}
+
+.nav_fixed {
+  position: sticky;
+  z-index: 9;
+  background-color: var(--cast-iron);
+  inset: 0% 0% auto;
+}
+
+.nav_component {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100;
+  height: 3;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--background-color--background-primary);
+}
+
+.nav-text-block {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'apercu-pro', sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  letter-spacing: .0015rem;
+  color: #eae8dd;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: .5rem;
+  grid-row-gap: 1rem;
+}
+
+.coming-soon-wrapper {
+  max-width: 1200px;
+  /* display: flex; */
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -30px;
+}
+
+.coming-soon-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 5rem 0rem 5rem;
+  color: #fff;
+  background-color: var(--brick);
+}
+
+.coming-soon-logo-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  min-width: 1040px;
+  justify-content: flex-start;
+  padding-top: clamp(10px, 5vh, 120px);
+  padding-bottom: clamp(10px, 1vh, 120px);
+  background-color: var(--pine) !important;
+  margin-top: 4rem;
+  margin-bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responsive-hotel-logo {
+  max-height: 155px;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .coming-soon-logo-container {
+    padding-top: clamp(10px, 5vh, 120px);
+    padding-bottom: clamp(10px, 1vh, 120px);
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+
+  .coming-soon-hero {
+    padding: 0px;
+    margin-bottom: -2rem;
+  }
+
+  .responsive-hotel-logo {
+    max-height: 150px;
+    width: auto;
+    height: auto;
+  }
+
+  .nav_component {
+    padding: 5%
+  }
+}
+
+</style > <div class="nav_fixed" > <div class="nav_component" > <div class="nav_container" > <div > <a href="#" id="trig" > </a > <a href="https://www.hotelwestlandseattle.com" class="link-block" > <div class="nav-text-block" > Back to Home </div > </a > </div > <li id="res" > </li > <li id="cart" > </li > </ul > <div class="clear" > </div > </div > <div class="social-icons-wrapper" > <a href="https://www.instagram.com/hotelwestlandseattle/" target="_blank"
+class="w-inline-block" > <img src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f19e38a51d9d019b257b54_InstagramLogo.svg"
+alt="Instagram" > </a > <a href="https://www.linkedin.com/company/aparium-hotel-group/" class="w-inline-block" > <img src="https://cdn.prod.website-files.com/66f194a89a12902be84cc4a8/66f19e385210d7b111194f05_LinkedinLogo.svg"
+alt="LinkedIn" > </a > </div > </div > </div > </div > <main class="coming-soon-wrapper" > <section class="coming-soon-hero" > <div class="coming-soon-logo-container " > <img class="responsive-hotel-logo"
+src="https://res.cloudinary.com/drdgkdg7m/image/upload/v1738855279/SEAWES_Hotel_Westland_Wordmark_Stacked_Brick_kq95wf.png"
+alt="hotel westland logo" > <h1 class="coming_soon" style="
+ text-align: center;
+text-transform: uppercase;
+color: #eeebe3;
+font-family: 'apercu-pro', sans-serif;
+font-size: 1rem;
+padding: 6px 8px 4px 8px;
+
+">
+ Now Accepting Reservations for July 1 + Beyond </h1 > </div > </section > </main > <script > const scriptContent=` function safeMakeSVG(color) {
+  try {
+    return makeSVG(color);
+  }
+
+  catch (error) {
+    console.error('Error in makeSVG function:', error);
+    return '';
+  }
+}
+
+var vars= {}
+
+;
+
+var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    vars[key]=value;
+  });
+
+function runScript() {
+  try {
+    $('head').append('<link rel="shortcut icon" href="//cdn.shrglobal.com/CrsMedia/P17399/bbe/aparium_mark_circle_white_circle.png">');
+    $('body').removeClass('ws-pagewidth-compact');
+
+    if (vars['subchan']==='GOO' || vars['subchan']==='GDB' || vars['subchan']==='GO' || vars['subchan']==='WGH') {
+      $('#buViewItem').click();
+      $('#buMoEdit').click();
+    }
+
+    if (typeof (vars['group']) !=='undefined') {
+      // Assuming 'css' is defined elsewhere or not needed
+      // css += '.WsIbeDetails .calMonth .calDays div span{display:none}';
+    }
+
+    // Check if elements exist before attempting to clone or remove
+    if ($('#MyHeading_buHeaderCart').length) {
+      $('#MyHeading_buHeaderCart').clone().appendTo('#cart');
+    }
+
+    if ($('#buMyResv').length) {
+      $('#buMyResv').clone().appendTo('#res');
+    }
+
+    if ($('#MyHeading_dvMyResv a').length) {
+      $('#MyHeading_dvMyResv a').remove();
+    }
+
+    if ($('#ws-cart').length) {
+      $('#ws-cart').remove();
+    }
+
+    $('#buMyResv').click(function (e) {
+        location.href='change.aspx?propertyID=' + WsVars.HotelID;
+        e.stopPropagation();
+      });
+
+    $('.ws-property-phone').each(function (index, elem) {
+        s=$(this).html();
+        $(this).html(s.substring(0, 9) + '-' + s.substring(9, 13));
+      });
+    // Use the safeMakeSVG function
+    $('#ap').html(beg + btoa(safeMakeSVG('#fff') + ap) + '" width="154" height="35"/>');
+    $('#en').prepend(beg + btoa('<svg xmlns="http://www.w3.org/2000/svg" fill="#f0f0ef"><g transform="matrix(.008,0,0,-.008,0,15)" style="stroke:none"><path d="M1664 32v768q-32 -36 -69 -66q-268 -206 -426 -338q-51 -43 -83 -67t-86.5 -48.5t-102.5 -24.5h-1h-1q-48 0 -102.5 24.5t-86.5 48.5t-83 67q-158 132 -426 338q-37 30 -69 66v-768q0 -13 9.5 -22.5t22.5 -9.5h1472q13 0 22.5 9.5t9.5 22.5zM1664 1083v11v13.5t-0.5 13 t-3 12.5t-5.5 9t-9 7.5t-14 2.5h-1472q-13 0 -22.5 -9.5t-9.5 -22.5q0 -168 147 -284q193 -152 401 -317q6 -5 35 -29.5t46 -37.5t44.5 -31.5t50.5 -27.5t43 -9h1h1q20 0 43 9t50.5 27.5t44.5 31.5t46 37.5t35 29.5q208 165 401 317q54 43 100.5 115.5t46.5 131.5z M1792 1120v-1088q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v1088q0 66 47 113t113 47h1472q66 0 113 -47t47 -113z"/></g></svg>') + '" width="24" height="16"/>');
+
+    $('#trig').click(function () {
+        $('#header').toggleClass('open');
+      });
+  }
+
+  catch (error) {
+    console.error('Error in script:', error);
+  }
+}
+
+$(document).ajaxComplete(function (event, xhr, settings) {
+    if (settings.url.includes('xml/getaddonlist.aspx')) {
+      $('#buAddonMore').click();
+    }
+  });
+
+// Delay the execution of the script
+$(window).on('load', function() {
+    runScript();
+  });
+`;
+const newScript=document.createElement('script');
+newScript.textContent=scriptContent;
+document.body.appendChild(newScript);
+</script >

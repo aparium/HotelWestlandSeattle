@@ -1,122 +1,112 @@
 @font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 300;
-  font-stretch: normal;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.ttf") format("truetype");
-  font-family: "Apercu";
   font-display: swap;
 }
 
 /* apercu-regular */
 @font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 400;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.ttf") format("truetype");
-  font-family: "Apercu";
   font-display: swap;
 }
 
 /* apercu-medium */
 @font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 500;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.ttf") format("truetype");
-  font-family: "Apercu";
   font-display: swap;
 }
 
 /* apercu-bold */
 @font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 700;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.ttf") format("truetype");
-  font-family: "Apercu";
   font-display: swap;
 }
 
 @font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 300;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.ttf") format("truetype");
-  font-family: "ApercuPro";
   font-display: swap;
 }
 
 /* apercu-pro-book */
 @font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 400;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.ttf") format("truetype");
-  font-family: "ApercuPro";
   font-display: swap;
 }
 
 /* apercu-pro-medium */
 @font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 500;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.ttf") format("truetype");
-  font-family: "ApercuPro";
   font-display: swap;
 }
 
 /* apercu-pro-bold */
 @font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 700;
-  font-stretch: normal;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.ttf") format("truetype");
-  font-family: "ApercuPro";
   font-display: swap;
 }
 
 /* Prestige */
 @font-face {
+  font-family: "Prestige";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 400;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.ttf") format("truetype");
-  font-family: "Prestige";
   font-display: swap;
 }
 
 /* Prestige Bold */
 @font-face {
+  font-family: "Prestige";
+  font-stretch: normal;
   font-style: normal;
   font-weight: 700;
-  font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.ttf") format("truetype");
-  font-family: "Prestige";
   font-display: swap;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 html {
   min-height: unset;
@@ -126,9 +116,8 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
-  /* font-weight:400;*/
-  src: url(https://cdn.shrglobal.com/IBE/CrsMedia/P17399/PrestigeEliteStd-Bd.woff) format("woff");
   font-family: prestige-elite-std;
+  src: url(https://cdn.shrglobal.com/IBE/CrsMedia/P17399/PrestigeEliteStd-Bd.woff) format("woff");
 }
 
 .ws-skiptocontent {
@@ -186,10 +175,10 @@ html {
 
 /*------------------- Core elements ----------------------*/
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-  vertical-align: baseline;
+  padding: 0;
   margin: 0;
   border: 0;
-  padding: 0;
+  vertical-align: baseline;
   font: inherit;
   font-size: 100%;
 }
@@ -199,8 +188,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 *,
@@ -225,8 +214,8 @@ a:visited {
 
 a:hover,
 a:active {
-  transition: color 0.8s ease;
   color: var(--color-brand-3);
+  transition: color 0.8s ease;
 }
 
 blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
@@ -234,9 +223,9 @@ blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
 }
 
 body {
+  line-height: 1.5;
   margin: 0;
   background-color: var(--sandstone);
-  line-height: 1.5;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: var(--font-family-2);
   text-rendering: optimizeLegibility;
@@ -246,13 +235,13 @@ body {
 }
 
 .address {
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
-  line-height: 2rem;
-  font-family: var(--font-family-1);
   text-decoration: none !important;
-  text-transform: uppercase;
 }
 
 .image-logo {
@@ -273,8 +262,8 @@ a:focus {
 
 .link-block {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   opacity: 1 !important;
   color: var(--sandstone);
   text-decoration: none;
@@ -289,10 +278,10 @@ a:focus {
 
 .list {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  padding-left: 0;
+  justify-content: flex-start;
   width: auto;
+  padding-left: 0;
   list-style-type: none;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -303,9 +292,9 @@ a:focus {
 }
 
 .padding-global {
+  width: 100%;
   padding-right: 2.5rem;
   padding-left: 2.5rem;
-  width: 100%;
 }
 
 .page-wrapper {
@@ -315,8 +304,8 @@ a:focus {
 @media screen and (min-width: 1440px) {
   .page-wrapper {
     display: block;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
   }
 
   .main-wrapper {
@@ -326,8 +315,8 @@ a:focus {
 
 .ws-results article:not(.ws-open) .ws-drawer-item a:hover h1:after,
 .ws-results article:not(.ws-open) .ws-drawer-item a:hover h3:after {
-  box-shadow: inset -75px 0 50px -35px var(--color-brand-1);
   background-color: var(--color-brand-1);
+  box-shadow: inset -75px 0 50px -35px var(--color-brand-1);
 }
 
 #ws-calendar p.ws-close a,
@@ -365,32 +354,32 @@ a:focus {
 }
 
 .ws-results hgroup h3 {
+  overflow: hidden;
+  width: 100%;
+  max-height: 3.67em;
+  line-height: 1.278;
+  padding: 0 10px;
   margin-bottom: 0;
   border-top: .556em solid transparent;
   border-bottom: .556em solid transparent;
-  padding: 0 10px;
-  width: 100%;
-  max-height: 3.67em;
-  overflow: hidden;
   color: var(--brick);
-  font-weight: 700;
-  font-size: 1.286em;
-  line-height: 1.278;
-  font-family: var(--font-family-1);
   text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: 1.286em;
+  font-weight: 700;
 }
 
 #ws-utility {
   order: 3;
-  border-bottom: var(--border-transparent);
-  background-color: var(--base-color-neutral--black);
   padding: 0;
   padding-right: 4rem;
   padding-left: 4rem;
+  border-bottom: var(--border-transparent);
   color: var(--sandstone);
-  font-size: 1.125rem;
-  font-family: Prestige, sans-serif;
+  background-color: var(--base-color-neutral--black);
   letter-spacing: -0.0788rem;
+  font-family: Prestige, sans-serif;
+  font-size: 1.125rem;
   text-decoration: none;
 }
 
@@ -399,8 +388,8 @@ a:focus {
 }
 
 .ws-msg-error {
-  background-color: var(--color-brand-7);
   color: var(--sandstone);
+  background-color: var(--color-brand-7);
 }
 
 #WsBgModal.ws-show-this {
@@ -429,10 +418,10 @@ a#buWsCartCont:hover {
 
 .ws-messages.ws-show-this,
 .ws-msg-error.ws-show-this {
-  border-radius: var(--border-radius-1);
-  background-color: var(--color-brand-2);
   padding: 15px;
+  border-radius: var(--border-radius-1);
   color: var(--color-brand-3);
+  background-color: var(--color-brand-2);
 }
 
 
@@ -450,32 +439,32 @@ span.ws-secondary,
 .ws-grid-list .ws-button-small.ws-active,
 .ws-attribute .ws-button-small.ws-active {
   display: inline-block;
-  opacity: 1 !important;
-  transition: var(--transition-default);
-  cursor: pointer !important;
+  min-width: 80px;
+  height: auto;
+  padding: 10px 15px 7px;
   margin: 0;
   border: var(--border-brand-2);
   border-radius: var(--border-radius-1) !important;
-  background-color: var(--color-brand-2);
-  padding: 10px 15px 7px;
-  min-width: 80px;
-  height: auto;
+  opacity: 1 !important;
   color: var(--color-brand-3);
-  font-weight: 400;
-  font-size: var(--font-size-body);
+  background-color: var(--color-brand-2);
+  cursor: pointer !important;
+  transition: var(--transition-default);
   text-align: center;
-  text-decoration: none;
   text-transform: capitalize;
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  text-decoration: none;
 }
 
 #ws-property-info-map {
   position: relative;
-  background-image: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/railspur_map_inverse.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 80%;
   height: 600px;
+  background-image: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/railspur_map_inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #ws-property-info-map #dvFrHotelMap {
@@ -494,19 +483,19 @@ span.ws-secondary,
 
 .ws-property-item .ws-property-title h1 {
   color: var(--sandstone);
-  font-weight: 700;
-  font-family: var(--font-family-2);
   text-transform: uppercase;
+  font-family: var(--font-family-2);
+  font-weight: 700;
 }
 
 .ws-property-item .ws-menu-bar li.activeli a {
-  padding: 0.75em 1em 0em 1em;
-  color: var(--pine);
-  font-weight: 700;
   line-height: 1;
   line-height: 1.5;
-  font-family: var(--font-family-2);
+  padding: 0.75em 1em 0em 1em;
+  color: var(--pine);
   text-transform: uppercase;
+  font-family: var(--font-family-2);
+  font-weight: 700;
 }
 
 li#liMap,
@@ -527,12 +516,12 @@ li#liMap,
 li#liGallery,
 li#liAmenities,
 li#liAbout {
-  border-color: var(--brick);
-  border-radius: 0 !important;
-  background-color: var(--cast-iron);
   padding: 4px 7px 3px 7px;
   padding-top: 5px;
-  color: var(--brick)
+  border-color: var(--brick);
+  border-radius: 0 !important;
+  color: var(--brick);
+  background-color: var(--cast-iron);
 }
 
 .ws-property-rating {
@@ -540,8 +529,8 @@ li#liAbout {
 }
 
 .ws-itinerary span.ws-form-item .ws-element {
-  padding-top: 1.5em;
   line-height: 1.929;
+  padding-top: 1.5em;
 }
 
 .ws-itinerary .ws-element label {
@@ -549,9 +538,9 @@ li#liAbout {
 }
 
 .ws-itinerary .ws-element {
+  overflow: hidden;
   width: 100%;
   height: 4em;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -566,8 +555,8 @@ li#liAbout {
 .ws-interact .ws-form-item .ws-element,
 #MyRetrieve_dvWsRetrieve .ws-form-item .ws-element,
 .ws-discount-code .ws-element {
-  outline: none;
   border-radius: var(--border-radius-0);
+  outline: none;
 }
 
 .ws-interact .ws-form-item .ws-element:focus,
@@ -583,10 +572,10 @@ div#dvItinerary {
 
 .main-wrapper,
 .contentwrapper {
-  margin-right: auto;
-  margin-left: auto;
   width: 100%;
   max-width: 1143px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .links_section,
@@ -602,23 +591,23 @@ div#dvItinerary {
 
 .main-wrapper,
 .contentwrapper {
+  width: 100%;
+  max-width: 1143px;
+  padding: 0rem 5rem !important;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--sandstone) !important;
-  padding: 0rem 5rem !important;
-  width: 100%;
-  max-width: 1143px;
 }
 
 .ws-icon:before {
   display: inline-block;
-  vertical-align: -1px;
+  line-height: 20px;
   margin-top: -.1em;
   margin-right: .25em;
   content: attr(data-icon);
-  font-size: 14px;
-  line-height: 20px;
+  vertical-align: -1px;
   font-family: 'wsicons';
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -633,12 +622,12 @@ b.ws-icon span {
 
 #ws-cart .ws-icon:after, p.ws-close .ws-icon:after, .ws-user-member .ws-icon:after {
   display: inline-block;
-  vertical-align: -1px;
+  line-height: 20px;
   margin-left: .25em;
   content: attr(data-icon);
-  font-size: 14px;
-  line-height: 20px;
+  vertical-align: -1px;
   font-family: 'wsicons';
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -648,7 +637,11 @@ b.ws-icon span {
 #ws-check-out,
 #ws-occupants {
   padding-left: 0;
-  color: var(--brick)
+  color: var(--brick);
+}
+
+label#lbOccupants {
+  padding-top: .5rem;
 }
 
 span.ws-pre.ws-property-city {
@@ -664,11 +657,11 @@ span.ws-pre.ws-property-phone {
 }
 
 div#dvItinerary {
+  max-width: 1040px;
+  padding: 5rem 5rem;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--pine);
-  padding: 5rem 5rem;
-  max-width: 1040px;
 }
 
 .ws-itinerary .ws-element label {
@@ -678,8 +671,8 @@ div#dvItinerary {
 .ws-user-prompt p {
   margin-bottom: 0;
   color: var(--sandstone) !important;
-  font-size: .858em;
   text-align: center;
+  font-size: .858em;
 }
 
 .ws-itinerary span.ws-form-item .ws-element, .ws-itinerary span.ws-form-item .ws-button, .ws-mod-dates .ws-element {
@@ -699,41 +692,41 @@ div#dvItinerary {
 
 input, select, textarea, button, .ws-button {
   color: var(--sandstone);
-  font-family: var(--font-family-2);
   text-transform: uppercase;
+  font-family: var(--font-family-2);
 }
 
 #dvMessage {
-  display: none;
   position: relative;
   z-index: 201;
-  background-color: var(--pine);
+  display: none;
   max-width: 1040px;
   color: var(--sandstone);
+  background-color: var(--pine);
   text-align: center;
 }
 
 .ws-number {
-  font-weight: 700;
   line-height: 1.25;
   font-family: var(--font-family-1);
+  font-weight: 700;
 }
 
 .ws-property-item .ws-menu-bar li a {
+  line-height: 1.4167;
   padding: .25em 10px;
   color: var(--sandstone);
   font-size: .858em;
-  line-height: 1.4167
 }
 
 .ws-menu-bar li.activeli {
-  border-bottom: 0 none;
   border-color: var(--sandstone);
+  border-bottom: 0 none;
   background-color: var(--sandstone) !important;
 }
 
 .ws-menu-bar li.activeli a {
-  color: var(--cast-iron)
+  color: var(--cast-iron);
 }
 
 #buViewItem,
@@ -742,12 +735,12 @@ input, select, textarea, button, .ws-button {
 #buFilterPkg,
 #buFilterQualifiedRates,
 #buFilterRoom {
+  line-height: 2rem;
   margin-left: -0.3em !important;
   border-width: thin;
   border-color: var(--pine);
   color: var(--pine);
   font-size: .85rem;
-  line-height: 2rem;
 }
 
 .ws-filter-sort-items a.ws-tag, .ws-filter-sort-items button.ws-tag  {
@@ -756,29 +749,29 @@ input, select, textarea, button, .ws-button {
 
 
 .num-plusminus .mpbtn {
-  cursor: pointer;
+  padding: 3px 3px;
   border: 1px solid var(--cast-iron);
   border-radius: 0px;
-  background-color: var(--cast-iron);
-  padding: 3px 3px;
   color: var(--sandstone);
+  background-color: var(--cast-iron);
+  cursor: pointer;
 }
 
 button.ws-button-small.ws-secondary.addRoomBlock button#update {
-  background-color: var(--cast-iron);
   padding: .55rem .75rem .25rem;
+  background-color: var(--cast-iron);
   font-size: 1rem;
 }
 
 li#liAmenities li#liAbout li#liGallery li#liMap {
-  width: unset
+  width: unset;
 }
 
 h2#lbLocation {
   color: var(--sandstone);
-  font-size: 1.5rem;
-  font-family: var(--font-family-1);
   text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: 1.5rem;
 }
 
 li.ws-amenity-item-icon {
@@ -809,14 +802,14 @@ p#txLocation ,
 }
 
 .ws-room-rate-name {
-  font-family: var(--font-family-1);
   text-transform: uppercase;
+  font-family: var(--font-family-1);
 
 }
 
 .ws-comments{
-  font-family: var(--font-family-2);
   text-transform: none ;
+  font-family: var(--font-family-2);
 }
 
 
@@ -830,8 +823,8 @@ p#txLocation ,
 }
 
 span.customSelect.custom.ws-element.customSelectHover {
-  background-color: var(--brick);
   padding-top: 3.5px;
+  background-color: var(--brick);
 }
 
 ul.cbUpgrade.ws-select-options {
@@ -839,10 +832,10 @@ ul.cbUpgrade.ws-select-options {
 }
 
 .ws-element {
-  border: 2px solid #ddd;
-  border-radius: 4px;
   height: 3em;
   line-height: 1.2;
+  border: 2px solid #ddd;
+  border-radius: 4px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -853,8 +846,8 @@ ul.cbUpgrade.ws-select-options {
  }
  
  .ws-results .ws-related-data h3 {
-   font-family: var(--font-family-1);
    text-transform: uppercase;
+   font-family: var(--font-family-1);
  }
 
  
@@ -878,17 +871,17 @@ a#txOccupants {
 
 
 input#buUpdateResults {
+  padding-top: 3px;
   border: 1px solid var(--brick);
   border-radius: 0px;
   background-color: var(--pine);
-  padding-top: 3px;
 }
 
 #ws-update, .ws-no-options #ws-update {
-  border: var(--cast-iron);
-  background-color: var(--cast-iron);
   width: 15%;
+  border: var(--cast-iron);
   color: var(--sandstone);
+  background-color: var(--cast-iron);
 }
 
 #ws-update, .ws-no-options #ws-update {
@@ -899,8 +892,8 @@ input#buUpdateResults {
 
 
  .ws-element {
-  outline: none;
   border-radius: var(--border-radius-0);
+  outline: none;
   background-color: transparent;
 }
 
@@ -914,9 +907,9 @@ input#buUpdateResults {
 }
 
 #ws-main section.ws-property-info {
+  max-height: 20rem;
   margin-top: 5rem;
   margin-bottom: 0;
-  max-height: 20rem;
 }
 
 #ws-main section#ws-calendar .ws-inner {
@@ -947,22 +940,22 @@ NOT BELOW HERE
 
 
 #ws-main section.ws-component .ws-inner {
+  padding: 0px;
   margin: 2rem 0 2rem 0;
   border-radius: 4px;
   background-color: var(--brick);
-  padding: 0px;
 }
 
 
 
 #ws-main section.ws-component .ws-inner {
+  padding: 0px;
+  padding: 20px 0 20px 0;
   margin: 2rem 0 2rem 0;
   border-color: var(--cast-iron);
   border-radius: 4px;
-  background-color: var(--brick);
-  padding: 0px;
-  padding: 20px 0 20px 0;
   color: var(--cast-iron);
+  background-color: var(--brick);
 }
 
 
@@ -970,11 +963,11 @@ NOT BELOW HERE
 
 #ws-main section {
   clear: both;
+  width: 100%;
+  max-width: 1040px;
   margin-right: auto;
   margin-bottom: 1.429em;
   margin-left: auto;
-  width: 100%;
-  max-width: 1040px;
 }
 
 #ws-main section.ws-component {
@@ -985,20 +978,20 @@ NOT BELOW HERE
 
 #ws-main section {
   clear: both;
+  width: 100%;
+  max-width: 1143px;
   margin-right: auto;
   margin-bottom: 1.429em;
   margin-left: auto;
-  width: 100%;
-  max-width: 1143px;
 }
 
 #ws-main section.ws-property-info {
+  max-width: 1040px;
+  padding: 5rem 2rem 5rem 2rem;
   margin: auto;
   margin-bottom: 0;
   margin-left: auto;
   background-color: var(--cast-iron);
-  padding: 5rem 2rem 5rem 2rem;
-  max-width: 1040px;
 }
 
 
@@ -1015,50 +1008,50 @@ lbEnterCodePrompt {
 
 .calDay {
   float: left;
-  margin: 9px 0;
   width: 100%;
+  margin: 9px 0;
   font-family: var(--font-family-1);
 }
 
 .calMonth {
   float: left;
-  opacity: 0;
+  overflow: hidden;
   width: 0;
   height: 0;
-  overflow: hidden;
-  font-family: var(--font-family-2);
+  opacity: 0;
   text-transform: uppercase;
+  font-family: var(--font-family-2);
 }
 
 #dvCalMonths,
 .calHead {
   float: left;
-  margin: 0 0 1px 0;
   width: 100%;
+  margin: 0 0 1px 0;
   color: var(--pine);
-  font-weight: bold;
-  font-size: 1em;
-  font-family: var(--font-family-2);
   text-align: center;
   text-transform: uppercase;
+  font-family: var(--font-family-2);
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .calDay div {
   float: left;
   width: 14.2857%;
   color: var(--color-brand-1);
-  font-weight: 500;
-  font-size: .786em;
-  font-family: var(--font-family-1);
   text-align: center;
   text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: .786em;
+  font-weight: 500;
 }
 
 #dvCalMonths {
-  margin: 0 auto;
   padding-top: 0.715em;
   padding-right: 30px;
   padding-left: 30px;
+  margin: 0 auto;
 }
 
 #ws-calendar {
@@ -1067,21 +1060,21 @@ lbEnterCodePrompt {
 
 #ws-calendar .calHead {
   color: var(--color-brand-3);
-  font-weight: 700;
-  font-size: var(--font-size-md-20);
-  font-family: var(--font-family-2);
   text-transform: uppercase;
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-md-20);
+  font-weight: 700;
 }
 
 .calDay div {
   float: left;
   width: 14.2857%;
   color: var(--color-brand-1);
-  font-weight: 500;
-  font-size: .786em;
-  font-family: var(--font-family-1);
   text-align: center;
   text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: .786em;
+  font-weight: 500;
 }
 
 html[dir="rtl"] .calDay div {
@@ -1091,21 +1084,21 @@ html[dir="rtl"] .calDay div {
 .calMonth .calDays div {
   position: relative;
   float: left;
-  border: 1px solid var(--sandstone);
-  background: var(--sandstone);
-  padding: .308em 6px 0 6px;
   width: 14.2858%;
   height: 3.23em;
-  color: var(--cast-iron);
   line-height: 1.3;
+  padding: .308em 6px 0 6px;
+  border: 1px solid var(--sandstone);
+  color: var(--cast-iron);
+  background: var(--sandstone);
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  font-weight: 700;
-  font-size: .929em;
-  font-family: var(--font-family-2);
   text-align: center;
+  font-family: var(--font-family-2);
+  font-size: .929em;
+  font-weight: 700;
 }
 
 .calMonth .calDays .calStrike {
@@ -1131,13 +1124,13 @@ html[dir="rtl"] .calDay div {
 }
 
 .calMonth .calDays div.pointer:hover {
-  background: var(--pine) !important;
   color: var(--sandstone);
+  background: var(--pine) !important;
 }
 
 .calMonth .calDays div.dtSelected {
-  background: var(--pine);
   color: var(--sandstone);
+  background: var(--pine);
 }
 
 .calMonth .calDays div:hover span, .calMonth .calDays div.dtSelected:hover span {
@@ -1145,8 +1138,8 @@ html[dir="rtl"] .calDay div {
 }
 
 div.dtSelected span {
-  background: transparent;
   color: var(--brick);
+  background: transparent;
 }
 
 .calMonth .calDays div.dtSelected:hover span {
@@ -1158,8 +1151,8 @@ div.dtSelected span {
 }
 
 .calMonth .calDays div.blocked {
-  cursor: default;
   color: var(--brick);
+  cursor: default;
 }
 
 .calMonth .calDays div.today {
@@ -1167,15 +1160,15 @@ div.dtSelected span {
 }
 
 .calMonth .calDays div.dtCheckout {
-  background: var(--pine);
   color: var(--sandstone);
+  background: var(--pine);
 }
 
 .calMonth .calDays div.dtCheckin:after {
   position: absolute;
+  z-index: 50;
   top: 50%;
   left: 0;
-  z-index: 50;
   margin-top: -8px;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
@@ -1185,9 +1178,9 @@ div.dtSelected span {
 
 .calMonth .calDays div.dtCheckout:after {
   position: absolute;
+  z-index: 50;
   top: 50%;
   right: 0;
-  z-index: 50;
   margin-top: -8px;
   border-top: 8px solid transparent;
   border-right: 8px solid var(--pine);
@@ -1198,17 +1191,17 @@ div.dtSelected span {
 .ws-property-item .ws-property-desc,
 .ws-property-item .ws-property-content {
   float: inline-start;
-  padding: 1rem;
   width: 10%;
+  padding: 1rem;
 }
 
 .ws-property-item .ws-menu-bar {
   display: inline-grid;
-  flex-direction: column;
   align-content: space-evenly;
+  flex-direction: column;
+  min-width: 30px;
   margin-top: 30px;
   margin-bottom: 0;
-  min-width: 30px;
 }
 
 #ws-main section.ws-property-info {
@@ -1218,18 +1211,18 @@ div.dtSelected span {
 
 .ws-property-item .ws-menu-bar {
   display: inline-grid;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  min-width: 5rem;
   margin-top: 30px;
   margin-bottom: 0;
-  min-width: 5rem;
 }
 
 .ws-property-item .ws-property-desc,
 .ws-property-item .ws-property-content {
   float: right;
-  padding-left: 20px;
   width: 100%;
+  padding-left: 20px;
 }
 
 .ws-no-rate .ws-property-item .ws-property-title {
@@ -1238,15 +1231,15 @@ div.dtSelected span {
 
 .ws-menu-bar li a {
   display: inline-block;
-  padding: .358em 10px;
   overflow: hidden;
+  padding: .358em 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 activeli {
+  color: var(--color-brand-2-opacity);
   background-color: var(--brick);
-  color: var(--color-brand-2-opacity)
 }
 
 #ws-property-info-gallery #ws-property-info-amenities #ws-property-info-about #ws-property-info-map {}
@@ -1257,34 +1250,34 @@ ws-related-desc ws-second {
 
 
 .ws-property-item .ws-menu-bar .active {
-  border-bottom: 0 none;
   border-color: #3d4836;
+  border-bottom: 0 none;
   border-radius: 0px;
-  background-color: #3d4836;
   color: #eeebe3;
+  background-color: #3d4836;
 }
 
 .ws-property-item .ws-menu-bar {}
 
 .ws-property-item .ws-menu-bar li a {
-  opacity: 1 !important;
-  transition: var(--transition-default);
-  cursor: pointer !important;
+  min-width: 150px;
+  height: auto;
+  padding: 10px 15px;
   margin: .25rem;
   border: #d0cdbf;
   border-radius: 0px;
-  background-color: #d0cdbf;
-  padding: 10px 15px;
-  min-width: 150px;
-  height: auto;
+  opacity: 1 !important;
   color: #3d4836;
-  font-weight: 600;
-  font-size: var(--font-size-body);
-  font-family: var(--font-family-2);
+  background-color: #d0cdbf;
   list-style: none;
+  cursor: pointer !important;
+  transition: var(--transition-default);
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-body);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .ws-menu-bar li,
@@ -1297,58 +1290,140 @@ li#liAbout {
 }
 
 .ws-menu-bar li {
-  display: unset;
   position: unset;
+  display: unset;
+  width: unset;
+  padding: unset;
   margin: unset;
   border: unset;
   border-bottom-color: unset;
   background-color: unset;
-  padding: unset;
-  width: unset;
   list-style: unset;
 }
 
 div#ws-property-info-gallery {
-  display: block;
   position: absolute;
+  z-index: 1000;
   top: 15px;
   left: 550px;
-  z-index: 1000;
+  display: block;
+  overflow: visible;
   width: 550px;
   height: auto;
-  overflow: visible;
   pointer-events: none;
 }
 
 div#ws-property-info-amenities {
-  display: block;
   position: absolute;
+  z-index: 1000;
   top: 35px;
   left: 550px;
-  z-index: 1000;
-  background-color: #3d4836;
+  display: block;
   width: 500px;
+  background-color: #3d4836;
   pointer-events: none;
 }
 
 div#ws-property-info-about {
-  display: block;
   position: absolute;
+  z-index: 1000;
   top: 35px;
   left: 550px;
-  z-index: 1000;
-  background-color: #3d4836;
-  padding: 2rem;
+  display: block;
   width: 500px;
-  pointer-events: none;
+  padding: 2rem;
   color: #eeebe3;
+  background-color: #3d4836;
+  pointer-events: none;
 }
 
 .page-ASP-index_aspx ul.ws-amenity-list-icons li.ws-amenity-item-icon {
   display: inline-block;
-  vertical-align: top;
-  margin: 5px;
-  padding: 5px;
   width: 15%;
+  padding: 5px;
+  margin: 5px;
   color: #eeebe3;
+  vertical-align: top;
+}
+
+
+div.ws-grid-list b.ws-icon {
+  color: var(--pine);
+}
+
+
+.ws-related-data {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background-color: var(--brick);
+}
+
+
+
+
+
+#calprev, #calnext {
+  position: absolute;
+  z-index: 100;
+  top: 100px;
+  margin-top: -9px;
+}
+
+#ws-main section.ws-component p.ws-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.calDay {
+  float: left;
+  width: 100%;
+  margin: 9px 0;
+  font-size: 1.5rem;
+}
+
+
+
+
+#dvCalMonths {
+  max-width: 950px;
+  padding-top: 1rem;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 0 auto;
+}
+
+.calMonth .calDays div {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 4em;
+  line-height: 1.3;
+  padding: 1em 8px 1em 8px;
+  color: #333;
+  background: #fff;
+  /* border: 1px solid #e5e5e5; */
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  font-size: .929em;
+}
+.ws-itinerary .ws-form-item, .ws-mod-dates .ws-form-item {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .715em;
+  vertical-align: top;
+}
+
+.ws-element {
+  height: 3em;
+  line-height: 1.2;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

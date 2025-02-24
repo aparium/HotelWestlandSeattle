@@ -2,129 +2,99 @@
   font-style: normal;
   font-weight: 300;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.ttf") format("truetype");
-  font-family: "Apercu";
-  font-display: swap;
+  font-family: Apercu;
+  font-display: swap
 }
 
-/* apercu-regular */
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.ttf") format("truetype");
-  font-family: "Apercu";
-  font-display: swap;
+  font-family: Apercu;
+  font-display: swap
 }
 
-/* apercu-medium */
 @font-face {
   font-style: normal;
   font-weight: 500;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.ttf") format("truetype");
-  font-family: "Apercu";
-  font-display: swap;
+  font-family: Apercu;
+  font-display: swap
 }
 
-/* apercu-bold */
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.ttf") format("truetype");
-  font-family: "Apercu";
-  font-display: swap;
+  font-family: Apercu;
+  font-display: swap
 }
 
 @font-face {
   font-style: normal;
   font-weight: 300;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.ttf") format("truetype");
-  font-family: "ApercuPro";
-  font-display: swap;
+  font-family: ApercuPro;
+  font-display: swap
 }
 
-/* apercu-pro-book */
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.ttf") format("truetype");
-  font-family: "ApercuPro";
-  font-display: swap;
+  font-family: ApercuPro;
+  font-display: swap
 }
 
-/* apercu-pro-medium */
 @font-face {
   font-style: normal;
   font-weight: 500;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.ttf") format("truetype");
-  font-family: "ApercuPro";
-  font-display: swap;
+  font-family: ApercuPro;
+  font-display: swap
 }
 
-/* apercu-pro-bold */
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.ttf") format("truetype");
-  font-family: "ApercuPro";
-  font-display: swap;
+  font-family: ApercuPro;
+  font-display: swap
 }
 
-/* Prestige */
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.ttf") format("truetype");
-  font-family: "Prestige";
-  font-display: swap;
+  font-family: Prestige;
+  font-display: swap
 }
 
-/* Prestige Bold */
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-stretch: normal;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot");
   src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.ttf") format("truetype");
-  font-family: "Prestige";
-  font-display: swap;
-}
-
-
-
-html {
-  min-height: unset;
-  font-size: unset;
-}
-
-.ws-skiptocontent {
-  display: none;
+  font-family: Prestige;
+  font-display: swap
 }
 
 :root {
@@ -140,15 +110,15 @@ html {
   --color-brand-5: var(--pine);
   --color-brand-6: var(--cast-iron);
   --color-brand-7: #ea4335;
-  --color-yellow: #fae67c;
-  --color-orange: #dd8b4b;
-  --color-blue: #b2d3de;
   --primary: var(--pine);
   --secondary: var(--sandstone);
   --color-black: var(--cast-iron);
   --color-white: var(--sandstone);
-  --font-family-1: 'apercu', sans-serif;
-  --font-family-2: "prestige-elite-std";
+  --color-yellow: #fae67c;
+  --color-orange: #dd8b4b;
+  --color-blue: #b2d3de;
+  --font-family-1: "Apercu", sans-serif;
+  --font-family-2: "Prestige", serif;
   --font-size-lg: 36px;
   --font-size-md: 30px;
   --font-size-md-24: 24px;
@@ -165,43 +135,7 @@ html {
   --border-transparent: 1px solid transparent;
   --border-brand-1: 2px solid var(--color-brand-1);
   --border-brand-2: 2px solid var(--color-brand-2);
-  --transition-default: all 0.5s ease;
-}
-
-@media screen and (max-width: 991px) {
-  :root {
-    --font-size-lg: 30px;
-    --font-size-md: 24px;
-    --font-size-md-24: 20px;
-    --font-size-md-20: 18px;
-    --font-size-body: 16px;
-    --letter-spacing-lg: 0.51px;
-  }
-}
-
-/*------------------- Core elements ----------------------*/
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-  vertical-align: baseline;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  font: inherit;
-  font-size: 100%;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-*,
-:after,
-:before {
-  box-sizing: border-box;
+  --transition-default: all 0.5s ease
 }
 
 a {
@@ -223,21 +157,12 @@ a:active {
   color: var(--color-brand-3);
 }
 
-blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
-  margin: 0;
-}
-
-body {}
-
 body {
   margin: 0;
   background-color: var(--sandstone);
   line-height: 1.5;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: var(--font-family-2);
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
 }
 
@@ -310,13 +235,13 @@ a:focus {
 
 @media screen and (min-width: 1440px) {
   .page-wrapper {
-    display: block;
-    justify-content: center;
-    align-items: flex-start;
+      display: block;
+      justify-content: center;
+      align-items: flex-start;
   }
 
   .main-wrapper {
-    display: block;
+      display: block;
   }
 }
 
@@ -326,12 +251,6 @@ a:focus {
   background-color: var(--color-brand-1);
 }
 
-#ws-occupancy-select p.ws-close a,
-#ws-options-select p.ws-close a {
-  padding: 15px;
-  color: var(--color-brand-1);
-}
-
 #ws-main {
   background-color: var(--brick);
   padding: 0;
@@ -339,8 +258,10 @@ a:focus {
   color: var(--cast-iron);
 }
 
-#ws-main section#ws-calendar .ws-inner {
-  padding-top: 4.572em;
+#ws-main section.ws-component .ws-inner,
+.ws-button-small,
+.ws-element {
+  border-radius: 0
 }
 
 #ws-main section.ws-component .ws-inner {
@@ -378,6 +299,24 @@ a:focus {
 .calMonth .calDays div.wsclosed:not(.wsoutonly),
 #hdSaveForLater {
   color: var(--cast-iron);
+}
+
+.ws-drawer-message {
+  position: relative;
+  max-width: 1098px;
+  margin: 0 auto;
+  padding: 0 0 2rem 1rem;
+  color: var(--pine);
+  border-bottom-color: transparent
+}
+
+
+
+
+label#lbItinCheckIn2,
+label#lbItinCheckOut2,
+label#lbOccupants {
+  padding-top: .5rem;
 }
 
 #headerwrapper {
@@ -535,7 +474,6 @@ span.ws-secondary,
   text-transform: uppercase;
 }
 
-
 li#liMap:hover,
 li#liGallery:hover,
 li#liAmenities:hover,
@@ -569,11 +507,11 @@ li#liAbout {
 }
 
 .ws-itinerary .ws-element {
-  margin-left: -.1rem !important;
   width: 100%;
   height: 4em;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: -.1rem !important;
 }
 
 .ws-element,
@@ -614,14 +552,6 @@ div#dvItinerary {
   padding: 0 5rem;
 }
 
-.main-wrapper,
-.contentwrapper {
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  max-width: 1143px;
-}
-
 .links_section,
 .newsletter_section {
   padding-right: 1rem !important;
@@ -660,22 +590,23 @@ b.ws-icon span {
   display: none;
 }
 
-#ws-cart .ws-icon:before, 
-p.ws-close .ws-icon:before, 
-.ws-user-member .ws-icon:before {
-  content: none;
+a#buOccClose {
+  color: var(--cast-iron)!important;
+  font-size: 1rem;
+
 }
 
-#ws-cart .ws-icon:after, 
-p.ws-close .ws-icon:after, 
+#ws-cart .ws-icon:after,
+p.ws-close .ws-icon:after,
 .ws-user-member .ws-icon:after {
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: -1px;
   margin-left: .25em;
   content: attr(data-icon);
   font-size: 14px;
   line-height: 20px;
   font-family: 'wsicons';
+  visibility: visible !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -733,6 +664,13 @@ div#dvItinerary {
 
 input#buUpdateResults {
   padding-top: .5rem;
+  background-color: var(--brick);
+  border-color: var(--brick);
+  opacity: 1;
+  color: var(--cast-iron);
+  font-weight: bold;
+  font-size: 1.15em;
+  border-radius: 0;
 }
 
 #ws-update, .ws-no-options #ws-update {
@@ -821,6 +759,15 @@ input, select, textarea, button, .ws-button {
   background-color: var(--cast-iron);
   padding: 3px 3px;
   color: var(--sandstone);
+}
+
+.num-plusminus #field_container input {
+  font-family: var(--font-family-1);
+  color: var(--pine);
+}
+
+section#ws-occupancy-select {
+  overflow-x: hidden;
 }
 
 button.ws-button-small.ws-secondary.addRoomBlock button#update {
@@ -932,8 +879,15 @@ span#spOccupants,
 .ws-occupancy-room-title {
   margin: 0 auto;
   max-width: 220px;
-  color: var(--pine);
   text-align: left;
+  color: var(--pine);
+}
+
+a#txOccupants,
+.ws-itinerary span.ws-form-item .ws-element.ws-calendar-dates, .ws-mod-dates .ws-element.ws-calendar-dates {
+  position: relative;
+  height: 4.5rem;
+  padding-top: 2rem;
 }
 
 input#room-0_adults-0,
@@ -942,26 +896,26 @@ label#room-0-adults-label {
 }
 
 a#buUpdateResultsDrawer {
-  border: 2px solid var(--pine);
   background-color: var(--pine);
-  padding: 10px 10px 7px;
+  border: 2px solid var(--pine);
   color: var(--sandstone);
-  font-weight: 700 !important;
   font-size: .75rem;
+  padding: 10px 10px 7px;
+  font-weight: 700 !important;
 }
 
 a#buUpdateResultsDrawer:hover {
-  border: 2px solid var(--cast-iron);
   background-color: var(--cast-iron);
-  padding: 10px 10px 7px;
+  border: 2px solid var(--cast-iron);
   color: var(--sandstone);
-  font-weight: 700 !important;
   font-size: .75rem;
+  padding: 10px 10px 7px;
+  font-weight: 700 !important;
 }
 
 .ws-related-data {
-  margin: 15px 40px;
   background-color: transparent;
+  margin: 15px 40px;
   width: calc(100% - 80px) !important;
 }
 
@@ -971,80 +925,151 @@ a#buUpdateResultsDrawer:hover {
   background-color: var(--brick);
 }
 
+/*------------------- CALENDAR ----------------------*/
 
+
+form#fmMain {
+  display: flex;
+  /* Use flexbox for centering */
+  justify-content: center;
+  /* Center the child horizontally */
+  width: 100%;
+  /* Stretch to full width */
+  max-width: 100vw;
+  /* Ensure it doesn't exceed viewport width */
+}
+
+section#ws-calendar {
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100vw;
+  box-sizing: border-box;
+  display: block;
+  transform: translateX(0);
+}
 
 @media screen {
   .calMonth .calDays div span {
-    color: var(--cast-iron)
+      color: var(--cast-iron);
+      font-family: var(--font-family-1);
+      font-size: 1rem;
   }
 
-  .wsclosed:not(.wsoutonly), .wsclosed:not(.wsoutonly), .calMonth .calDays div.wsclosed:not(.wsoutonly) {
-    background-color: var(--cast-iron) !important
+  .calMonth .calDays div.wsclosed:not(.wsoutonly),
+  .wsclosed:not(.wsoutonly) {
+      background-color: var(--brick) !important;
+      border-color: var(--brick) !important;
+      color: var(--pine) !important;
   }
 
   .ws-heading h2 {
-    color: (var(--pine);
-    font-weight: 400
+      font-size: 2em;
+      color: var(--pine);
+      font-weight: 400
   }
 
-  .ws-filter-sort-items a.ws-button-small.ws-active, .ws-grid-list .ws-button-small.ws-active, .ws-attribute .ws-button-small.ws-active {
-    background-color: var(--sandstone));
-    font-size: 2em
+  .ws-attribute .ws-button-small.ws-active,
+  .ws-filter-sort-items a.ws-button-small.ws-active,
+  .ws-grid-list .ws-button-small.ws-active {
+      background-color: var(--sandstone)
   }
 
   body > img {
-    display: none
+      display: none
   }
 
   footer {
-    background-color: var(--brick);
-    padding: 30px;
-    line-height: 2;
-    text-transform: uppercase
+      background-color: var(--brick);
+      padding: 30px;
+      text-transform: uppercase;
+      line-height: 2
   }
 
-  .col, footer .col a {
-    color: var(--sandstone);
-    font-size: 12px
+  .col,
+  footer .col a {
+      color: var(--sandstone);
+      font-size: 12px
   }
 
   footer .ws-primary {
-    display: inline-block;
-    padding: 0 30px
+      padding: 0 30px;
+      display: inline-block
   }
 }
 
-
-
-@media screen and (min-width:1184px) {
-  div#calprev, div#calnext {
-    top: 50%;
-    left: 50%;
-    margin-top: 0
-  }
-
-  #ws-main section.ws-component p.ws-close {
-    top: 50px;
-    right: auto;
-    left: 50%;
-    margin-left: 550px
-  }
-
-  div#calnext {
-    margin-left: 550px
-  }
-
-  div#calprev {
-    margin-left: -580px
-  }
+@media screen and (min-width:1024px) {
+#ws-main section.ws-component p.ws-close {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  font-size: 1rem;
+  font-weight: bold;
+}
 }
 
+@media screen and (max-width:1024px) {
+  #menu {
+      display: block
+  }
 
+  #menu a {
+      font-size: 0;
+      display: block
+  }
+
+  .open #menu a {
+      font-size: 15px;
+      color: var(--sandstone);
+      padding: 9px 20px;
+      border-top: 1px solid var(--brick)
+  }
+
+  .open #menu {
+      background-color: var(--pine)
+  }
+
+  #trig {
+      font-size: 32px
+  }
+
+  .col {
+      width: 24%
+  }
+}
 
 @media screen and (max-width:800px) {
   .col {
-    width: 100%
+      width: 100%
   }
+}
+
+@media screen and (min-width:1025px) {
+
+  #ws-utility b,
+  header {
+      font-family: var(--font-family-2)
+  }
+
+  #ws-utility {
+      position: absolute;
+      right: 0
+  }
+
+  #menu a {
+      display: inline-block;
+      margin: 15px
+  }
+}
+
+
+.calMonth .calDays div span {
+  color: var(--cast-iron);
+  font-family: var(--font-family-1);
+  font-size: 1rem;
 }
 
 #ws-main #ws-calendar .ws-inner {
@@ -1053,73 +1078,122 @@ a#buUpdateResultsDrawer:hover {
 }
 
 #ws-main section#ws-calendar .ws-inner {
-  padding-top: 3.572em
+  padding-top: 3.572em;
+  padding-bottom: 5%
 }
 
 #dvCalMonths {
-  padding: .715em 0 0 0;
-  max-width: 1098px
-}
-
-.ws-drawer-message {
-  position: relative;
-  margin: 0 auto;
-  border-bottom-color: transparent;
-  padding: 0 10px .715em;
   max-width: 1098px;
-  color: var(--pine)
+  padding: .715em 0 0 0
 }
 
 
+@media screen and (min-width:1184px) {
+
+  div#calnext,
+  div#calprev {
+      top: 50%;
+      margin-top: 0;
+      left: 50%
+  }
+
+
+
+  div#calnext {
+      margin-left: 550px
+  }
+
+  div#calprev {
+      margin-left: -580px
+  }
+}
 
 #ws-calendar .calHead {
-  font-weight: bold;
-  font-size: 1.2em;
-  font-family: var(--font-family-1);
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: var(--font-family-1);
+  color: var(--pine);
+}
+
+#ws-calendar .calMonth .calDays div {
+  border: 1px solid var(--sandstone);
 }
 
 .calMonth .calDays div {
-  margin-top: -1px;
-  margin-right: -1px;
-  padding-bottom: 10%;
   height: 0;
-  min-height: 5.5em !important
+  margin-right: -1px;
+  background: var(--sandstone);
+  margin-top: -1px;
+  padding-bottom: 10%;
+  min-height: 5.5em !important;
+  background: var(--sandstone);
+  color: var(--pine);
+  border: 1px solid var(--sandstone);
+  font-family: var(--font-family-2) !important;
 }
 
 .calDay div {
-  color: var(--brick)
+  color: var(--pine);
+  font-size: 1em;
 }
 
+
+div.dtSelected span {
+  color: var(--sandstone) !important;
+  background: transparent;
+  font-family: var(--font-family-1);
+  font-size: 1.25rem!important;
+}
+
+div.dtSelected span {
+  color: var(--sandstone) !important;
+  background: transparent;
+  font-family: var(--font-family-1);
+  font-size: 1.25rem !important;
+}
+
+
+
 .ws-legend {
-  color: var(--pine)
+  color: var(--pine);
+  text-align: center;
+  margin: 0;
+  clear: both;
+  padding: 3em 0 0 0;
 }
 
 #ws-main .ws-itinerary section#ws-calendar {
+  width: calc(100vw);
   left: 50%;
   margin-left: calc(-50vw);
-  border: 1px solid var(--sandstone);
-  width: calc(100vw)
+}
+
+#calnext,
+#calnext .ws-icon::before,
+#calprev,
+#calprev .ws-icon:before,
+#ws-calendar p.ws-close a {
+  color: var(--cast-iron)
+}
+
+#calnext > a:hover,
+#calprev > a:hover {
+  color: var(--pine);
 }
 
 #ws-calendar .calMonth .calDays div {
   border: 1px solid var(--sandstone)
 }
 
-#ws-calendar p.ws-close a, #calprev, #calnext, #calprev .ws-icon:before, #calnext .ws-icon::before {
-  color: var(--cast-iron)
-}
-
 fieldset {
   border: 0 none
 }
 
-.ws-element, span.customSelect {
-  border: 1px solid var(--brick)) border-radius: 0
-}
-
-legend span {
-  display: none
+.ws-element,
+span.customSelect {
+  border: 1px solid var(--brick);
+  border-radius: 0
 }
 
 .calMonth .calDays div {
@@ -1127,44 +1201,112 @@ legend span {
 }
 
 a#buCalClear {
-  border: 2px solid var(--pine);
   background-color: var(--brick);
-  padding: 10px 10px 7px;
+  border: 2px solid var(--pine);
   color: var(--pine);
-  font-weight: 700 !important;
   font-size: .75rem;
+  padding: 10px 10px 7px;
+  font-weight: 700 !important
 }
 
 a#buCalClear:hover {
-  border: 2px solid var(--pine);
   background-color: var(--pine);
-  padding: 10px 10px 7px;
+  border: 2px solid var(--pine);
   color: var(--sandstone);
-  font-weight: 700 !important;
   font-size: .75rem;
+  padding: 10px 10px 7px;
+  font-weight: 700 !important
 }
 
-.calMonth .calDays div.dtSelected, .ws-highlight-check-out #dvCalMonths .calMonth .calDays div.dtCheckout {
-  background: var(--sandstone);
-  color: var(--pine)
+a#buUpdateResultsDrawer {
+  background-color: var(--pine);
+  border: 2px solid var(--pine);
+  color: var(--sandstone);
+  font-size: .75rem;
+  padding: 10px 10px 7px;
+  font-weight: 700 !important;
+}
+
+a#buUpdateResultsDrawer:hover {
+  background-color: var(--cast-iron);
+  border: 2px solid var(--cast-iron);
+  color: var(--sandstone);
+  font-size: .75rem;
+  padding: 10px 10px 7px;
+  font-weight: 700 !important;
+}
+
+.calMonth .calDays div.dtCheckout,
+.calMonth .calDays div.dtSelected,
+.ws-highlight-check-out #dvCalMonths .calMonth .calDays div.dtCheckout {
+  color: var(--sandstone) !important;
+  background: var(--pine) !important;
+  border-color: var(--pine) !important;
+}
+
+.calMonth .calDays div.today {
+  color: var(--pine) !important;
+  background-color: var(--color-yellow) !important;
 }
 
 .calMonth .calDays div.dtCheckin:after {
-  border-left: 8px solid var(--cast-iron)
+  border-left: 12px solid var(--sandstone)
 }
 
 .calMonth .calDays div.dtCheckout:after {
-  border-right: 8px solid var(--cast-iron)
+  border-right: 12px solid var(--sandstone)
 }
 
+.calMonth .calDays div.wsclosed:not(.wsoutonly),
+.wsclosed:not(.wsoutonly) {
+  background-color: var(--brick) !important;
+  border-color: var(--brick) !important;
+  color: var(--pine) !important;
+}
+
+.wscta,
+.calMonth .calDays div.wscta {
+  background-color: var(--color-brand-7) !important;
+  color: var(--sandstone) !important;
+}
+
+.wsclosed:not(.wsoutonly),
+.calMonth .calDays div.wsclosed:not(.wsoutonly) {
+  color: var(--brick) !important;
+  background-color: var(--cast-iron) !important;
+  border-color: var(--cast-iron) !important;
+}
+
+.calMonth .calDays div b,
+.calMonth .calDays div.wsclosed:not(.wsoutonly) span {
+  color: var(--brick) !important;
+  background-color: var(--cast-iron) !important;
+  border-color: var(--cast-iron) !important;
+}
 
 @media print {
-  header, ul.col, footer .ws-primary, .ws-nav-journey, .ws-cart-details .ws-open-close, #MyFooter_dvPrivacyPolicy, #MyFooter_dvPrivacyManage {
-    display: none
+
+  #MyFooter_dvPrivacyManage,
+  #MyFooter_dvPrivacyPolicy,
+  .ws-cart-details .ws-open-close,
+  .ws-nav-journey,
+  footer .ws-primary,
+  header,
+  ul.col {
+      display: none
   }
 
   div.col {
-    display: block;
-    width: 100%
+      display: block;
+      width: 100%
   }
+}
+
+span.ws-icon {
+  padding-right: 5px;
+}
+
+.ws-msg-error {
+  background-color: var(--color-brand-7);
+  color: var(--sandstone);
 }
