@@ -1,0 +1,923 @@
+@font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-light.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* apercu-regular */
+@font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* apercu-medium */
+@font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* apercu-bold */
+@font-face {
+  font-family: "Apercu";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-light.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* apercu-pro-book */
+@font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* apercu-pro-medium */
+@font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* apercu-pro-bold */
+@font-face {
+  font-family: "ApercuPro";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/apercu/apercu-pro-bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Prestige */
+@font-face {
+  font-family: "Prestige";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Prestige Bold */
+@font-face {
+  font-family: "Prestige";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/fonts/prestige/prestige-bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+html {
+  min-height: unset;
+  font-size: unset;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: prestige-elite-std;
+  src: url(https://cdn.shrglobal.com/IBE/CrsMedia/P17399/PrestigeEliteStd-Bd.woff) format("woff");
+}
+
+.ws-skiptocontent {
+  display: none;
+}
+
+:root {
+  --cast-iron: #212120;
+  --sandstone: #eeebe3;
+  --pine: #3d4836;
+  --brick: #d0cdbf;
+  --color-brand-1: var(--pine);
+  --color-brand-2: var(--brick);
+  --color-brand-2-opacity: rgba(61, 72, 54, 0.85);
+  --color-brand-3: var(--cast-iron);
+  --color-brand-4: var(--sandstone);
+  --color-brand-5: var(--pine);
+  --color-brand-6: var(--cast-iron);
+  --color-brand-7: #A63A50;
+  --primary: var(--pine);
+  --secondary: var(--sandstone);
+  --color-black: var(--cast-iron);
+  --color-white: var(--sandstone);
+  --font-family-1: 'apercu', sans-serif;
+  --font-family-2: "prestige-elite-std";
+  --font-size-lg: 36px;
+  --font-size-md: 30px;
+  --font-size-md-24: 24px;
+  --font-size-md-20: 20px;
+  --font-size-body: 18px;
+  --letter-spacing-lg: 1.5px;
+  --border-radius-0: 0;
+  --border-radius-1: 0px;
+  --box-shadow-main: 4px 10px 21px -10px var(--color-brand-3);
+  --box-shadow-bkg: 1px 1px 25px -15px var(--color-brand-3);
+  --box-shadow-header: 4px 10px 21px -21px var(--color-black);
+  --border-default: 1px solid var(--color-brand-3);
+  --border-white: 2px solid var(--color-white);
+  --border-transparent: 1px solid transparent;
+  --border-brand-1: 2px solid var(--color-brand-1);
+  --border-brand-2: 2px solid var(--color-brand-2);
+  --transition-default: all 0.5s ease;
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --font-size-lg: 30px;
+    --font-size-md: 24px;
+    --font-size-md-24: 20px;
+    --font-size-md-20: 18px;
+    --font-size-body: 16px;
+    --letter-spacing-lg: 0.51px;
+  }
+}
+
+/*------------------- Core elements ----------------------*/
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  /*    border-radius: var(--border-radius-1);*/
+}
+
+a {
+  color: var(--color-brand-2);
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  position: relative;
+  transition: var(--transition-default);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--color-brand-3);
+  transition: color 0.8s ease;
+}
+
+blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  background-color: var(--sandstone);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-family-2);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+.address {
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.image-logo {
+  max-height: 150px;
+}
+
+.image {
+  max-width: 222px;
+}
+
+.image-2 {
+  max-width: 150px;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.link-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 1 !important;
+  color: var(--sandstone);
+  text-decoration: none;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.link-block:hover {
+  opacity: 1 !important;
+  text-decoration: underline;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  padding-left: 0;
+  list-style-type: none;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.main-wrapper {
+  background-color: unset;
+}
+
+.padding-global {
+  width: 100%;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.page-wrapper {
+  background-color: var(--brick);
+}
+
+@media screen and (min-width: 1440px) {
+  .page-wrapper {
+    display: block;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .main-wrapper {
+    display: block;
+  }
+}
+
+.ws-results article:not(.ws-open) .ws-drawer-item a:hover h1:after,
+.ws-results article:not(.ws-open) .ws-drawer-item a:hover h3:after {
+  background-color: var(--color-brand-1);
+  box-shadow: inset -75px 0 50px -35px var(--color-brand-1);
+}
+
+#ws-calendar p.ws-close a,
+#ws-occupancy-select p.ws-close a,
+#ws-options-select p.ws-close a,
+#calprev .ws-icon:before,
+#calnext .ws-icon:before,
+#ws-calendar .calHead {
+  padding: 15px;
+  color: var(--color-brand-1);
+}
+
+.ws-drawer-message,
+#ws-options-select .ws-item,
+.ws-occupancy-room .ws-form-elements,
+.ws-occupancy-room .ws-item,
+#ws-calendar .calHead,
+#ws-calendar .calDay,
+.ws-legend-item,
+.calMonth .calDays div.wsclosed:not(.wsoutonly),
+#hdSaveForLater {
+  color: var(--color-black);
+}
+
+#headerwrapper {
+  order: 1;
+}
+
+.nav_fixed {
+  order: 1;
+}
+
+.main-wrapper {
+  order: 2;
+}
+
+.ws-results hgroup h3 {
+  overflow: hidden;
+  width: 100%;
+  max-height: 3.67em;
+  line-height: 1.278;
+  padding: 0 10px;
+  margin-bottom: 0;
+  border-top: .556em solid transparent;
+  border-bottom: .556em solid transparent;
+  color: var(--brick);
+  text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: 1.286em;
+  font-weight: 700;
+}
+
+#ws-utility {
+  order: 3;
+  padding: 0;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  border-bottom: var(--border-transparent);
+  color: var(--sandstone);
+  background-color: var(--base-color-neutral--black);
+  letter-spacing: -0.0788rem;
+  font-family: Prestige, sans-serif;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+#WsBgModal.ws-show-this {
+  opacity: 0;
+}
+
+.ws-msg-error {
+  color: var(--sandstone);
+  background-color: var(--color-brand-7);
+}
+
+#WsBgModal.ws-show-this {
+  max-height: 10000000px;
+}
+
+.ws-cart-view2 .ws-buttons a {
+  width: unset;
+}
+
+a#buWsCartCont:hover {
+  background-color: var(--color-brand-1);
+}
+
+.ws-heading h1 {
+  color: var(--color-brand-1);
+  font-size: var(--font-size-lg);
+}
+
+#ws-back .ws-nav-yin {
+  border-top-color: var(--color-brand-2);
+  border-bottom-color: var(--color-brand-2);
+  color: var(--color-brand-3);
+}
+
+.ws-messages.ws-show-this,
+.ws-msg-error.ws-show-this {
+  padding: 15px;
+  border-radius: var(--border-radius-1);
+  color: var(--color-brand-3);
+  background-color: var(--color-brand-2);
+}
+
+#buWsCartCart,
+#buIndex,
+.ws-secondary,
+a.ws-secondary,
+span.ws-secondary,
+.ws-buttons .ws-button,
+.ws-buttons .ws-button-small,
+.ws-button-small,
+.ws-button-small.ws-tag,
+.ws-filter-sort-items a.ws-button-small.ws-active,
+.ws-filter-sort-items button.ws-button-small.ws-active,
+.ws-grid-list .ws-button-small.ws-active,
+.ws-attribute .ws-button-small.ws-active {
+  display: inline-block;
+  min-width: 80px;
+  height: auto;
+  padding: 10px 15px 7px;
+  margin: 0;
+  border: var(--border-brand-2);
+  border-radius: var(--border-radius-1) !important;
+  opacity: 1 !important;
+  color: var(--color-brand-3);
+  background-color: var(--color-brand-2);
+  cursor: pointer !important;
+  transition: var(--transition-default);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#ws-property-info-map {
+  position: relative;
+  width: 80%;
+  height: 600px;
+  background-image: url("https://cdn.jsdelivr.net/gh/aparium/HotelWestlandSeattle/railspur_map_inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#ws-property-info-map #dvFrHotelMap {
+  display: none !important;
+  /* Hide the Google Map container */
+}
+
+.ws-menu-bar li {
+  background-color: var(--sandstone);
+}
+
+.ws-property-item {
+  padding: 0 10px;
+  padding-bottom: 1.429em;
+}
+
+.ws-property-item .ws-property-title h1 {
+  color: var(--sandstone);
+  text-transform: uppercase;
+  font-family: var(--font-family-2);
+  font-weight: 700;
+}
+
+.ws-property-item .ws-menu-bar li.activeli a {
+  line-height: 1;
+  line-height: 1.5;
+  padding: 0.75em 1em 0em 1em;
+  color: var(--pine);
+  text-transform: uppercase;
+  font-family: var(--font-family-2);
+  font-weight: 700;
+}
+
+li#liMap,
+li#liGallery,
+li#liAmenities,
+li#liAbout {
+  border-radius: 0 !important;
+}
+
+li#liMap:hover,
+li#liGallery:hover,
+li#liAmenities:hover,
+li#liAbout:hover {
+  font-weight: 700;
+}
+
+li#liMap,
+li#liGallery,
+li#liAmenities,
+li#liAbout {
+  padding: 4px 7px 3px 7px;
+  padding-top: 5px;
+  border-color: var(--brick);
+  border-radius: 0 !important;
+  color: var(--brick);
+  background-color: var(--cast-iron);
+}
+
+.ws-property-rating {
+  display: none;
+}
+
+.ws-itinerary span.ws-form-item .ws-element {
+  line-height: 1.929;
+  padding-top: 1.5em;
+}
+
+.ws-itinerary .ws-element label {
+  color: var(--color-brand-1);
+}
+
+.ws-itinerary .ws-element {
+  overflow: hidden;
+  width: 100%;
+  height: 4em;
+  text-overflow: ellipsis;
+}
+
+.ws-itinerary span.ws-form-item .ws-element.ws-calendar-dates input,
+.ws-mod-dates .ws-element input {
+  outline: none;
+}
+
+.ws-interact .ws-form-item .ws-element,
+#MyRetrieve_dvWsRetrieve .ws-form-item .ws-element,
+.ws-discount-code .ws-element {
+  border-radius: var(--border-radius-0);
+  outline: none;
+}
+
+.ws-interact .ws-form-item .ws-element:focus,
+#MyRetrieve_dvWsRetrieve .ws-form-item .ws-element:focus,
+.ws-discount-code .ws-element:focus {
+  border: none;
+  border-bottom: var(--color-brand-2) !important;
+}
+
+div#dvItinerary {
+  padding: 0 5rem;
+}
+
+.main-wrapper,
+.contentwrapper {
+  width: 100%;
+  max-width: 1143px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.links_section,
+.newsletter_section {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+#content {
+  width: unset !important;
+  max-width: unset !important;
+}
+
+.main-wrapper,
+.contentwrapper {
+  width: 100%;
+  max-width: 1143px;
+  padding: 0rem 5rem !important;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--sandstone) !important;
+}
+
+.ws-icon:before {
+  display: inline-block;
+  line-height: 20px;
+  margin-top: -.1em;
+  margin-right: .25em;
+  content: attr(data-icon);
+  vertical-align: -1px;
+  font-family: 'wsicons';
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+b.ws-icon span {
+  display: none;
+}
+
+#ws-cart .ws-icon:before, p.ws-close .ws-icon:before, .ws-user-member .ws-icon:before {
+  content: none;
+}
+
+#ws-cart .ws-icon:after, p.ws-close .ws-icon:after, .ws-user-member .ws-icon:after {
+  display: inline-block;
+  line-height: 20px;
+  margin-left: .25em;
+  content: attr(data-icon);
+  vertical-align: -1px;
+  font-family: 'wsicons';
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ws-element,
+.ws-form-item,
+#ws-check-out,
+#ws-occupants {
+  padding-left: 0;
+  color: var(--brick);
+}
+
+label#lbOccupants {
+  padding-top: .5rem;
+}
+
+span.ws-pre.ws-property-city {
+  color: var(--brick);
+}
+
+span.ws-pre.ws-property-street {
+  color: var(--brick);
+}
+
+span.ws-pre.ws-property-phone {
+  color: var(--brick);
+}
+
+div#dvItinerary {
+  max-width: 1040px;
+  padding: 5rem 5rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--pine);
+}
+
+.ws-itinerary .ws-element label {
+  color: var(--sandstone);
+}
+
+.ws-user-prompt p {
+  margin-bottom: 0;
+  color: var(--sandstone) !important;
+  text-align: center;
+  font-size: .858em;
+}
+
+.ws-itinerary span.ws-form-item .ws-element, .ws-itinerary span.ws-form-item .ws-button, .ws-mod-dates .ws-element {
+  height: 4em;
+}
+
+.ws-element, .ws-form-item {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  border-width: thin;
+  border-color: var(--sandstone);
+  border-radius: 0px !important;
+  color: var(--sandstone);
+}
+
+input, select, textarea, button, .ws-button {
+  color: var(--sandstone);
+  text-transform: uppercase;
+  font-family: var(--font-family-2);
+}
+
+#dvMessage {
+  position: relative;
+  z-index: 201;
+  display: none;
+  max-width: 1040px;
+  color: var(--sandstone);
+  background-color: var(--pine);
+  text-align: center;
+}
+
+.ws-number {
+  line-height: 1.25;
+  font-family: var(--font-family-1);
+  font-weight: 700;
+}
+
+.ws-property-item .ws-menu-bar li a {
+  line-height: 1.4167;
+  padding: .25em 10px;
+  color: var(--sandstone);
+  font-size: .858em;
+}
+
+.ws-menu-bar li.activeli {
+  border-color: var(--sandstone);
+  border-bottom: 0 none;
+  background-color: var(--sandstone) !important;
+}
+
+.ws-menu-bar li.activeli a {
+  color: var(--cast-iron);
+}
+
+#buViewItem,
+#buViewGrid,
+#buViewList,
+#buFilterPkg,
+#buFilterQualifiedRates,
+#buFilterRoom {
+  line-height: 2rem;
+  margin-left: -0.3em !important;
+  border-width: thin;
+  border-color: var(--pine);
+  color: var(--pine);
+  font-size: .85rem;
+}
+
+.ws-filter-sort-items a.ws-tag, .ws-filter-sort-items button.ws-tag {
+  background-color: var(--sandstone);
+}
+
+.num-plusminus .mpbtn {
+  padding: 3px 3px;
+  border: 1px solid var(--cast-iron);
+  border-radius: 0px;
+  color: var(--sandstone);
+  background-color: var(--cast-iron);
+  cursor: pointer;
+}
+
+button.ws-button-small.ws-secondary.addRoomBlock button#update {
+  padding: .55rem .75rem .25rem;
+  background-color: var(--cast-iron);
+  font-size: 1rem;
+}
+
+li#liAmenities li#liAbout li#liGallery li#liMap {
+  width: unset;
+}
+
+h2#lbLocation {
+  color: var(--sandstone);
+  text-transform: uppercase;
+  font-family: var(--font-family-1);
+  font-size: 1.5rem;
+}
+
+li.ws-amenity-item-icon {
+  color: var(--sandstone);
+}
+
+p#lbEnterCodePrompt,
+a#tbAbout,
+a#tbAmenities,
+a#tbGallery,
+a#tbMap {
+  font-weight: 700;
+}
+
+.ws-amenity-item-icon,
+.ws-amenity-name,
+p#txHotelDesc,
+#dvHotelIconAmens,
+p#txLocation,
+#txHotelDesc {
+  color: var(--sandstone);
+}
+
+.ws-journey .ws-active-step .ws-nav-yin,
+.ws-related-data.ws-show-this {
+  border-color: var(--brick);
+  background-color: var(--sandstone) !important;
+}
+
+.ws-room-rate-name {
+  text-transform: uppercase;
+  font-family: var(--font-family-1);
+}
+
+.ws-comments {
+  text-transform: none;
+  font-family: var(--font-family-2);
+}
+
+.ws-element, .ws-form-item {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  border-width: thin;
+  border-color: var(--cast-iron);
+  border-radius: 0px !important;
+  color: var(--cast-iron);
+}
+
+span.customSelect.custom.ws-element.customSelectHover {
+  padding-top: 3.5px;
+  background-color: var(--brick);
+}
+
+ul.cbUpgrade.ws-select-options {
+  background-color: var(--sandstone);
+}
+
+.ws-element {
+  height: 3em;
+  line-height: 1.2;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ws-results article.ws-open hgroup {
+  border-bottom: 0px;
+}
+
+.ws-results .ws-related-data h3 {
+  text-transform: uppercase;
+  font-family: var(--font-family-1);
+}
+
+element.style {
+  width: unset;
+}
+
+.ws-element, .ws-form-item {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  border-width: thin;
+  border-radius: 0px !important;
+}
+
+a#txOccupants {
+  color: var(--sandstone);
+}
+
+input#buUpdateResults {
+  padding-top: 3px;
+  border: 1px solid var(--brick);
+  border-radius: 0px;
+  background-color: var(--pine);
+}
+
+#ws-update, .ws-no-options #ws-update {
+  width: 15%;
+  border: var(--cast-iron);
+  color: var(--sandstone);
+  background-color: var(--cast-iron);
+}
+
+#ws-update, .ws-no-options #ws-update {
+  border: unset;
+  background-color: unset;
+}
+
+.ws-element {
+  border-radius: var(--border-radius-0);
+  outline: none;
+  background-color: transparent;
+}
+
+.ws-element,
+.ws-form-item {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  border-color: var(--color-brand-1);
+  border-radius: 0px !important;
+  color: var(--color-brand-1);
+}
+
+#ws-main section.ws-property-info {
+  max-height: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+#ws-main section#ws-calendar .ws-inner {
+  padding-top: 4.572em;
+}
+
+
+#buOccClose > .ws-icon {
+  color: var(--cast-iron);
+}
+
+div.dtCheckout span,
+div.dtSelected span {
+  color: var(--sandstone) !important;
+  background: 0 0;
+  font-family: var(--font-family-1);
+  font-size: 1.25rem !important;
+}
+
+div.dtCheckout span:hover,
+div.dtSelected span:hover {
+  filter: brightness(120%);
+  -webkit-filter: ;
+  -webkit-filter: brightness(120%);
+}
+
+select.child-ddl {
+  background-color: var(--cast-iron);
+}
